@@ -1,0 +1,4 @@
+[submodule "experiments"]
+	path = experiments
+	url = git@github.com:raytheonbbn/maude-hcs.git
+	branch = PWND-105-test_suite
