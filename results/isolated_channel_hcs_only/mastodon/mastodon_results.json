@@ -1,0 +1,548 @@
+{
+  "standard_deviation": "population",
+  "experiments": [
+    {
+      "experiment": "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_080201",
+      "clients": [
+        "alice_1",
+        "alice_2"
+      ],
+      "log_files": [
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_080201/raceboat_users/alice_node_type_mastodon_1/code/alice_1_09-24-26_06-13-26.log",
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_080201/raceboat_users/alice_node_type_mastodon_2/code/alice_2_09-24-26_06-13-19.log"
+      ],
+      "goodput_bps": 174.17855957517423,
+      "latency_s": {
+        "matched_messages": 1312,
+        "mean": 70.5791631097561,
+        "stddev": 10.446070665781118,
+        "percentiles": {
+          "p0_min": 42.841,
+          "p25": 63.088750000000005,
+          "p50_median": 70.749,
+          "p75": 77.72575,
+          "p100_max": 106.964
+        }
+      },
+      "availability": {
+        "delivered_messages": 1312,
+        "expected_deliveries": 1312,
+        "rate": 1.0
+      },
+      "integrity": {
+        "system": 0.28125,
+        "per_client": {
+          "alice_1": 0.28125,
+          "alice_2": 0.28125
+        }
+      },
+      "network_duration_s": 6026.0,
+      "irc_messages": {
+        "sent": 1312,
+        "received": 1312,
+        "total": 2624
+      },
+      "payload_bytes": {
+        "sent": 65600,
+        "received": 65600,
+        "total": 131200
+      }
+    },
+    {
+      "experiment": "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_080206",
+      "clients": [
+        "alice_1",
+        "alice_2"
+      ],
+      "log_files": [
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_080206/raceboat_users/alice_node_type_mastodon_1/code/alice_1_09-24-26_06-13-39.log",
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_080206/raceboat_users/alice_node_type_mastodon_2/code/alice_2_09-24-26_06-13-33.log"
+      ],
+      "goodput_bps": 175.31516666968037,
+      "latency_s": {
+        "matched_messages": 1321,
+        "mean": 72.99051551854656,
+        "stddev": 11.113418057758793,
+        "percentiles": {
+          "p0_min": 37.788,
+          "p25": 65.278,
+          "p50_median": 72.773,
+          "p75": 80.743,
+          "p100_max": 115.089
+        }
+      },
+      "availability": {
+        "delivered_messages": 1321,
+        "expected_deliveries": 1321,
+        "rate": 1.0
+      },
+      "integrity": {
+        "system": 0.2800908402725208,
+        "per_client": {
+          "alice_1": 0.28236184708554124,
+          "alice_2": 0.27781983345950034
+        }
+      },
+      "network_duration_s": 6028.001,
+      "irc_messages": {
+        "sent": 1321,
+        "received": 1321,
+        "total": 2642
+      },
+      "payload_bytes": {
+        "sent": 66050,
+        "received": 66050,
+        "total": 132100
+      }
+    },
+    {
+      "experiment": "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_095801",
+      "clients": [
+        "alice_1",
+        "alice_2"
+      ],
+      "log_files": [
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_095801/raceboat_users/alice_node_type_mastodon_1/code/alice_1_09-24-26_08-09-38.log",
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_095801/raceboat_users/alice_node_type_mastodon_2/code/alice_2_09-24-26_08-09-32.log"
+      ],
+      "goodput_bps": 178.38283606461297,
+      "latency_s": {
+        "matched_messages": 1343,
+        "mean": 72.03265376023828,
+        "stddev": 10.949288393459915,
+        "percentiles": {
+          "p0_min": 34.944,
+          "p25": 64.34,
+          "p50_median": 72.096,
+          "p75": 79.19149999999999,
+          "p100_max": 109.483
+        }
+      },
+      "availability": {
+        "delivered_messages": 1343,
+        "expected_deliveries": 1343,
+        "rate": 1.0
+      },
+      "integrity": {
+        "system": 0.2732688011913626,
+        "per_client": {
+          "alice_1": 0.26954579300074455,
+          "alice_2": 0.27699180938198065
+        }
+      },
+      "network_duration_s": 6023.001,
+      "irc_messages": {
+        "sent": 1343,
+        "received": 1343,
+        "total": 2686
+      },
+      "payload_bytes": {
+        "sent": 67150,
+        "received": 67150,
+        "total": 134300
+      }
+    },
+    {
+      "experiment": "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_095805",
+      "clients": [
+        "alice_1",
+        "alice_2"
+      ],
+      "log_files": [
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_095805/raceboat_users/alice_node_type_mastodon_1/code/alice_1_09-24-26_08-09-09.log",
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_095805/raceboat_users/alice_node_type_mastodon_2/code/alice_2_09-24-26_08-09-03.log"
+      ],
+      "goodput_bps": 175.78772802653398,
+      "latency_s": {
+        "matched_messages": 1325,
+        "mean": 70.16511396226414,
+        "stddev": 10.433094256903255,
+        "percentiles": {
+          "p0_min": 33.39,
+          "p25": 62.783,
+          "p50_median": 70.618,
+          "p75": 77.17,
+          "p100_max": 101.737
+        }
+      },
+      "availability": {
+        "delivered_messages": 1325,
+        "expected_deliveries": 1325,
+        "rate": 1.0
+      },
+      "integrity": {
+        "system": 0.2833962264150944,
+        "per_client": {
+          "alice_1": 0.2754716981132076,
+          "alice_2": 0.29132075471698116
+        }
+      },
+      "network_duration_s": 6030.0,
+      "irc_messages": {
+        "sent": 1325,
+        "received": 1325,
+        "total": 2650
+      },
+      "payload_bytes": {
+        "sent": 66250,
+        "received": 66250,
+        "total": 132500
+      }
+    },
+    {
+      "experiment": "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_115301",
+      "clients": [
+        "alice_1",
+        "alice_2"
+      ],
+      "log_files": [
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_115301/raceboat_users/alice_node_type_mastodon_1/code/alice_1_09-24-26_10-05-13.log",
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_115301/raceboat_users/alice_node_type_mastodon_2/code/alice_2_09-24-26_10-05-07.log"
+      ],
+      "goodput_bps": 176.43544639893793,
+      "latency_s": {
+        "matched_messages": 1329,
+        "mean": 70.21760045146728,
+        "stddev": 10.47254219601351,
+        "percentiles": {
+          "p0_min": 37.698,
+          "p25": 63.124,
+          "p50_median": 69.926,
+          "p75": 77.275,
+          "p100_max": 109.363
+        }
+      },
+      "availability": {
+        "delivered_messages": 1329,
+        "expected_deliveries": 1329,
+        "rate": 1.0
+      },
+      "integrity": {
+        "system": 0.2866817155756208,
+        "per_client": {
+          "alice_1": 0.29194883370955604,
+          "alice_2": 0.2814145974416855
+        }
+      },
+      "network_duration_s": 6026.0,
+      "irc_messages": {
+        "sent": 1329,
+        "received": 1329,
+        "total": 2658
+      },
+      "payload_bytes": {
+        "sent": 66450,
+        "received": 66450,
+        "total": 132900
+      }
+    },
+    {
+      "experiment": "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_115403",
+      "clients": [
+        "alice_1",
+        "alice_2"
+      ],
+      "log_files": [
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_115403/raceboat_users/alice_node_type_mastodon_1/code/alice_1_09-24-26_10-05-40.log",
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_115403/raceboat_users/alice_node_type_mastodon_2/code/alice_2_09-24-26_10-05-34.log"
+      ],
+      "goodput_bps": 178.85477178423236,
+      "latency_s": {
+        "matched_messages": 1347,
+        "mean": 72.12494877505567,
+        "stddev": 11.062954893745315,
+        "percentiles": {
+          "p0_min": 31.95,
+          "p25": 64.543,
+          "p50_median": 72.054,
+          "p75": 79.8255,
+          "p100_max": 113.496
+        }
+      },
+      "availability": {
+        "delivered_messages": 1347,
+        "expected_deliveries": 1347,
+        "rate": 1.0
+      },
+      "integrity": {
+        "system": 0.27616926503340755,
+        "per_client": {
+          "alice_1": 0.25909428359317,
+          "alice_2": 0.2932442464736451
+        }
+      },
+      "network_duration_s": 6025.0,
+      "irc_messages": {
+        "sent": 1347,
+        "received": 1347,
+        "total": 2694
+      },
+      "payload_bytes": {
+        "sent": 67350,
+        "received": 67350,
+        "total": 134700
+      }
+    },
+    {
+      "experiment": "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_134805",
+      "clients": [
+        "alice_1",
+        "alice_2"
+      ],
+      "log_files": [
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_134805/raceboat_users/alice_node_type_mastodon_1/code/alice_1_09-24-26_12-00-09.log",
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_134805/raceboat_users/alice_node_type_mastodon_2/code/alice_2_09-24-26_12-00-02.log"
+      ],
+      "goodput_bps": 178.33803284126722,
+      "latency_s": {
+        "matched_messages": 1344,
+        "mean": 70.70656473214287,
+        "stddev": 10.568769544783832,
+        "percentiles": {
+          "p0_min": 40.34,
+          "p25": 63.711749999999995,
+          "p50_median": 70.54,
+          "p75": 77.71549999999999,
+          "p100_max": 98.431
+        }
+      },
+      "availability": {
+        "delivered_messages": 1344,
+        "expected_deliveries": 1344,
+        "rate": 1.0
+      },
+      "integrity": {
+        "system": 0.2845982142857143,
+        "per_client": {
+          "alice_1": 0.29538690476190477,
+          "alice_2": 0.27380952380952384
+        }
+      },
+      "network_duration_s": 6029.0,
+      "irc_messages": {
+        "sent": 1344,
+        "received": 1344,
+        "total": 2688
+      },
+      "payload_bytes": {
+        "sent": 67200,
+        "received": 67200,
+        "total": 134400
+      }
+    },
+    {
+      "experiment": "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_134956",
+      "clients": [
+        "alice_1",
+        "alice_2"
+      ],
+      "log_files": [
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_134956/raceboat_users/alice_node_type_mastodon_1/code/alice_1_09-24-26_12-01-38.log",
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_134956/raceboat_users/alice_node_type_mastodon_2/code/alice_2_09-24-26_12-01-31.log"
+      ],
+      "goodput_bps": 177.86640079760718,
+      "latency_s": {
+        "matched_messages": 1338,
+        "mean": 72.24265171898357,
+        "stddev": 10.881353779769043,
+        "percentiles": {
+          "p0_min": 42.141,
+          "p25": 64.3735,
+          "p50_median": 72.01050000000001,
+          "p75": 79.36075,
+          "p100_max": 111.126
+        }
+      },
+      "availability": {
+        "delivered_messages": 1338,
+        "expected_deliveries": 1338,
+        "rate": 1.0
+      },
+      "integrity": {
+        "system": 0.27615844544095663,
+        "per_client": {
+          "alice_1": 0.27653213751868455,
+          "alice_2": 0.2757847533632287
+        }
+      },
+      "network_duration_s": 6018.0,
+      "irc_messages": {
+        "sent": 1338,
+        "received": 1338,
+        "total": 2676
+      },
+      "payload_bytes": {
+        "sent": 66900,
+        "received": 66900,
+        "total": 133800
+      }
+    },
+    {
+      "experiment": "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_154300",
+      "clients": [
+        "alice_1",
+        "alice_2"
+      ],
+      "log_files": [
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_154300/raceboat_users/alice_node_type_mastodon_1/code/alice_1_09-24-26_13-55-14.log",
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_154300/raceboat_users/alice_node_type_mastodon_2/code/alice_2_09-24-26_13-55-07.log"
+      ],
+      "goodput_bps": 176.06639004149378,
+      "latency_s": {
+        "matched_messages": 1326,
+        "mean": 69.14728733031674,
+        "stddev": 11.069760666919189,
+        "percentiles": {
+          "p0_min": 38.646,
+          "p25": 61.822,
+          "p50_median": 68.7675,
+          "p75": 76.23774999999999,
+          "p100_max": 105.983
+        }
+      },
+      "availability": {
+        "delivered_messages": 1326,
+        "expected_deliveries": 1326,
+        "rate": 1.0
+      },
+      "integrity": {
+        "system": 0.277526395173454,
+        "per_client": {
+          "alice_1": 0.27073906485671195,
+          "alice_2": 0.28431372549019607
+        }
+      },
+      "network_duration_s": 6025.0,
+      "irc_messages": {
+        "sent": 1326,
+        "received": 1326,
+        "total": 2652
+      },
+      "payload_bytes": {
+        "sent": 66300,
+        "received": 66300,
+        "total": 132600
+      }
+    },
+    {
+      "experiment": "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_154608",
+      "clients": [
+        "alice_1",
+        "alice_2"
+      ],
+      "log_files": [
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_154608/raceboat_users/alice_node_type_mastodon_1/code/alice_1_09-24-26_13-57-24.log",
+        "/Users/dcirimel/pwnd2/mastodon_zips/validation_only_mastodon_20260924_154608/raceboat_users/alice_node_type_mastodon_2/code/alice_2_09-24-26_13-57-18.log"
+      ],
+      "goodput_bps": 179.76782752902156,
+      "latency_s": {
+        "matched_messages": 1355,
+        "mean": 72.5025225092251,
+        "stddev": 11.65385247624382,
+        "percentiles": {
+          "p0_min": 44.007,
+          "p25": 64.2795,
+          "p50_median": 72.256,
+          "p75": 79.884,
+          "p100_max": 117.698
+        }
+      },
+      "availability": {
+        "delivered_messages": 1355,
+        "expected_deliveries": 1355,
+        "rate": 1.0
+      },
+      "integrity": {
+        "system": 0.2785977859778598,
+        "per_client": {
+          "alice_1": 0.2760147601476015,
+          "alice_2": 0.28118081180811805
+        }
+      },
+      "network_duration_s": 6030.0,
+      "irc_messages": {
+        "sent": 1355,
+        "received": 1355,
+        "total": 2710
+      },
+      "payload_bytes": {
+        "sent": 67750,
+        "received": 67750,
+        "total": 135500
+      }
+    }
+  ],
+  "summary": {
+    "experiments_analyzed": 10,
+    "goodput_bps": {
+      "count": 10,
+      "mean": 177.09931597285615,
+      "stddev": 1.7004343523903238
+    },
+    "latency_mean_s": {
+      "count": 10,
+      "mean": 71.27090218679963,
+      "stddev": 1.198617901270825
+    },
+    "latency_percentiles_s": {
+      "p0_min": {
+        "count": 10,
+        "mean": 38.3745,
+        "stddev": 3.85340769319832
+      },
+      "p25": {
+        "count": 10,
+        "mean": 63.734350000000006,
+        "stddev": 0.9726905931487164
+      },
+      "p50_median": {
+        "count": 10,
+        "mean": 71.179,
+        "stddev": 1.1954896277258125
+      },
+      "p75": {
+        "count": 10,
+        "mean": 78.512875,
+        "stddev": 1.3972495761763537
+      },
+      "p100_max": {
+        "count": 10,
+        "mean": 108.93699999999998,
+        "stddev": 5.616875465950798
+      }
+    },
+    "availability_rate": {
+      "count": 10,
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "integrity_system": {
+      "count": 10,
+      "mean": 0.27977376893659905,
+      "stddev": 0.004015074504235786
+    },
+    "integrity_per_client": {
+      "alice_1": {
+        "count": 10,
+        "mean": 0.27783453227871224,
+        "stddev": 0.010100979404737424
+      },
+      "alice_2": {
+        "count": 10,
+        "mean": 0.281713005594486,
+        "stddev": 0.0060636988465342665
+      }
+    },
+    "irc_messages_total": {
+      "count": 10,
+      "mean": 2668.0,
+      "stddev": 25.534290669607408
+    },
+    "payload_bytes_total": {
+      "count": 10,
+      "mean": 133400.0,
+      "stddev": 1276.7145334803704
+    }
+  },
+  "failures": []
+}

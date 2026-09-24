@@ -1,0 +1,313 @@
+{
+  "standard_deviation": "population",
+  "experiments": [
+    {
+      "experiment": "/Users/dcirimel/pwnd2/obfs_zips/validation_only_obfs_20260923_221259",
+      "clients": [
+        "alice_1",
+        "alice_2"
+      ],
+      "log_files": [
+        "/Users/dcirimel/pwnd2/obfs_zips/validation_only_obfs_20260923_221259/raceboat_users/alice_node_type_obfs_1/code/alice_1_09-23-26_20-26-32.log",
+        "/Users/dcirimel/pwnd2/obfs_zips/validation_only_obfs_20260923_221259/raceboat_users/alice_node_type_obfs_2/code/alice_2_09-23-26_20-26-39.log"
+      ],
+      "goodput_bps": 178.81102623713053,
+      "latency_s": {
+        "matched_messages": 1346,
+        "mean": 0.044074294205052,
+        "stddev": 0.0003955271648181244,
+        "percentiles": {
+          "p0_min": 0.043,
+          "p25": 0.044,
+          "p50_median": 0.044,
+          "p75": 0.044,
+          "p100_max": 0.047
+        }
+      },
+      "availability": {
+        "delivered_messages": 1346,
+        "expected_deliveries": 1346,
+        "rate": 1.0
+      },
+      "integrity": {
+        "system": 0.9487369985141159,
+        "per_client": {
+          "alice_1": 0.9985141158989599,
+          "alice_2": 0.8989598811292719
+        }
+      },
+      "network_duration_s": 6022.0,
+      "irc_messages": {
+        "sent": 1346,
+        "received": 1346,
+        "total": 2692
+      },
+      "payload_bytes": {
+        "sent": 67300,
+        "received": 67300,
+        "total": 134600
+      }
+    },
+    {
+      "experiment": "/Users/dcirimel/pwnd2/obfs_zips/validation_only_obfs_20260923_221304",
+      "clients": [
+        "alice_1",
+        "alice_2"
+      ],
+      "log_files": [
+        "/Users/dcirimel/pwnd2/obfs_zips/validation_only_obfs_20260923_221304/raceboat_users/alice_node_type_obfs_1/code/alice_1_09-23-26_20-26-26.log",
+        "/Users/dcirimel/pwnd2/obfs_zips/validation_only_obfs_20260923_221304/raceboat_users/alice_node_type_obfs_2/code/alice_2_09-23-26_20-26-32.log"
+      ],
+      "goodput_bps": 175.78772802653398,
+      "latency_s": {
+        "matched_messages": 1325,
+        "mean": 0.043355471698113206,
+        "stddev": 0.0005613816044392417,
+        "percentiles": {
+          "p0_min": 0.043,
+          "p25": 0.043,
+          "p50_median": 0.043,
+          "p75": 0.044,
+          "p100_max": 0.054
+        }
+      },
+      "availability": {
+        "delivered_messages": 1325,
+        "expected_deliveries": 1325,
+        "rate": 1.0
+      },
+      "integrity": {
+        "system": 0.9581132075471699,
+        "per_client": {
+          "alice_1": 1.0,
+          "alice_2": 0.9162264150943397
+        }
+      },
+      "network_duration_s": 6030.0,
+      "irc_messages": {
+        "sent": 1325,
+        "received": 1325,
+        "total": 2650
+      },
+      "payload_bytes": {
+        "sent": 66250,
+        "received": 66250,
+        "total": 132500
+      }
+    },
+    {
+      "experiment": "/Users/dcirimel/pwnd2/obfs_zips/validation_only_obfs_20260924_000302",
+      "clients": [
+        "alice_1",
+        "alice_2"
+      ],
+      "log_files": [
+        "/Users/dcirimel/pwnd2/obfs_zips/validation_only_obfs_20260924_000302/raceboat_users/alice_node_type_obfs_1/code/alice_1_09-23-26_22-16-52.log",
+        "/Users/dcirimel/pwnd2/obfs_zips/validation_only_obfs_20260924_000302/raceboat_users/alice_node_type_obfs_2/code/alice_2_09-23-26_22-16-59.log"
+      ],
+      "goodput_bps": 179.253112033195,
+      "latency_s": {
+        "matched_messages": 1350,
+        "mean": 0.04405407407407407,
+        "stddev": 0.0003972615451484986,
+        "percentiles": {
+          "p0_min": 0.043,
+          "p25": 0.044,
+          "p50_median": 0.044,
+          "p75": 0.044,
+          "p100_max": 0.046
+        }
+      },
+      "availability": {
+        "delivered_messages": 1350,
+        "expected_deliveries": 1350,
+        "rate": 1.0
+      },
+      "integrity": {
+        "system": 0.9381481481481482,
+        "per_client": {
+          "alice_1": 1.0,
+          "alice_2": 0.8762962962962964
+        }
+      },
+      "network_duration_s": 6025.0,
+      "irc_messages": {
+        "sent": 1350,
+        "received": 1350,
+        "total": 2700
+      },
+      "payload_bytes": {
+        "sent": 67500,
+        "received": 67500,
+        "total": 135000
+      }
+    },
+    {
+      "experiment": "/Users/dcirimel/pwnd2/obfs_zips/validation_only_obfs_20260924_015302",
+      "clients": [
+        "alice_1",
+        "alice_2"
+      ],
+      "log_files": [
+        "/Users/dcirimel/pwnd2/obfs_zips/validation_only_obfs_20260924_015302/raceboat_users/alice_node_type_obfs_1/code/alice_1_09-24-26_00-06-40.log",
+        "/Users/dcirimel/pwnd2/obfs_zips/validation_only_obfs_20260924_015302/raceboat_users/alice_node_type_obfs_2/code/alice_2_09-24-26_00-06-46.log"
+      ],
+      "goodput_bps": 180.49104180491042,
+      "latency_s": {
+        "matched_messages": 1360,
+        "mean": 0.043448529411764705,
+        "stddev": 0.0006029322094024739,
+        "percentiles": {
+          "p0_min": 0.043,
+          "p25": 0.043,
+          "p50_median": 0.043,
+          "p75": 0.044,
+          "p100_max": 0.056
+        }
+      },
+      "availability": {
+        "delivered_messages": 1360,
+        "expected_deliveries": 1360,
+        "rate": 1.0
+      },
+      "integrity": {
+        "system": 0.9492647058823529,
+        "per_client": {
+          "alice_1": 1.0,
+          "alice_2": 0.8985294117647059
+        }
+      },
+      "network_duration_s": 6028.0,
+      "irc_messages": {
+        "sent": 1360,
+        "received": 1360,
+        "total": 2720
+      },
+      "payload_bytes": {
+        "sent": 68000,
+        "received": 68000,
+        "total": 136000
+      }
+    },
+    {
+      "experiment": "/Users/dcirimel/pwnd2/obfs_zips/validation_only_obfs_20260924_015402",
+      "clients": [
+        "alice_1",
+        "alice_2"
+      ],
+      "log_files": [
+        "/Users/dcirimel/pwnd2/obfs_zips/validation_only_obfs_20260924_015402/raceboat_users/alice_node_type_obfs_1/code/alice_1_09-24-26_00-07-00.log",
+        "/Users/dcirimel/pwnd2/obfs_zips/validation_only_obfs_20260924_015402/raceboat_users/alice_node_type_obfs_2/code/alice_2_09-24-26_00-07-07.log"
+      ],
+      "goodput_bps": 177.79253112033194,
+      "latency_s": {
+        "matched_messages": 1339,
+        "mean": 0.044121732636295735,
+        "stddev": 0.00039711203563384145,
+        "percentiles": {
+          "p0_min": 0.043,
+          "p25": 0.044,
+          "p50_median": 0.044,
+          "p75": 0.044,
+          "p100_max": 0.046
+        }
+      },
+      "availability": {
+        "delivered_messages": 1339,
+        "expected_deliveries": 1339,
+        "rate": 1.0
+      },
+      "integrity": {
+        "system": 0.9458551157580284,
+        "per_client": {
+          "alice_1": 1.0,
+          "alice_2": 0.8917102315160568
+        }
+      },
+      "network_duration_s": 6025.0,
+      "irc_messages": {
+        "sent": 1339,
+        "received": 1339,
+        "total": 2678
+      },
+      "payload_bytes": {
+        "sent": 66950,
+        "received": 66950,
+        "total": 133900
+      }
+    }
+  ],
+  "summary": {
+    "experiments_analyzed": 5,
+    "goodput_bps": {
+      "count": 5,
+      "mean": 178.42708784442038,
+      "stddev": 1.5785127864682844
+    },
+    "latency_mean_s": {
+      "count": 5,
+      "mean": 0.043810820405059944,
+      "stddev": 0.00033581376238743575
+    },
+    "latency_percentiles_s": {
+      "p0_min": {
+        "count": 5,
+        "mean": 0.043,
+        "stddev": 0.0
+      },
+      "p25": {
+        "count": 5,
+        "mean": 0.04359999999999999,
+        "stddev": 0.000489897948556636
+      },
+      "p50_median": {
+        "count": 5,
+        "mean": 0.04359999999999999,
+        "stddev": 0.000489897948556636
+      },
+      "p75": {
+        "count": 5,
+        "mean": 0.044,
+        "stddev": 0.0
+      },
+      "p100_max": {
+        "count": 5,
+        "mean": 0.0498,
+        "stddev": 0.0043081318457076035
+      }
+    },
+    "availability_rate": {
+      "count": 5,
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "integrity_system": {
+      "count": 5,
+      "mean": 0.9480236351699631,
+      "stddev": 0.006419911757754922
+    },
+    "integrity_per_client": {
+      "alice_1": {
+        "count": 5,
+        "mean": 0.999702823179792,
+        "stddev": 0.0005943536404160454
+      },
+      "alice_2": {
+        "count": 5,
+        "mean": 0.8963444471601342,
+        "stddev": 0.012886516377997115
+      }
+    },
+    "irc_messages_total": {
+      "count": 5,
+      "mean": 2688.0,
+      "stddev": 23.35808211305029
+    },
+    "payload_bytes_total": {
+      "count": 5,
+      "mean": 134400.0,
+      "stddev": 1167.9041056525145
+    }
+  },
+  "failures": []
+}

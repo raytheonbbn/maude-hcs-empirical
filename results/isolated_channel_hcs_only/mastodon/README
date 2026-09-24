@@ -1,0 +1,2 @@
+Note: This uses the SCENARIO 2 mastodon client/server user models, not the scenario 1 user models. I could not find the `_old` scenario1 
+user models. The new models with explicit wait states do not run on the testbed, and were created to have the correct behavior in Maude.
