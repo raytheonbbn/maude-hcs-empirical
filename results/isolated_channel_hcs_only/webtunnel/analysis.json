@@ -1,0 +1,3648 @@
+{
+  "yaml_filename": "webtunnel_isolated.yaml",
+  "run_time": 300,
+  "no_tgens": true,
+  "no_hcs": false,
+  "results": {
+    "cumulative:availability:t0_t120": {
+      "query": {
+        "type": "cumulative",
+        "feat": "availability",
+        "start": "0",
+        "end": "120"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:availability:t0_t150": {
+      "query": {
+        "type": "cumulative",
+        "feat": "availability",
+        "start": "0",
+        "end": "150"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:availability:t0_t180": {
+      "query": {
+        "type": "cumulative",
+        "feat": "availability",
+        "start": "0",
+        "end": "180"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:availability:t0_t210": {
+      "query": {
+        "type": "cumulative",
+        "feat": "availability",
+        "start": "0",
+        "end": "210"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:availability:t0_t240": {
+      "query": {
+        "type": "cumulative",
+        "feat": "availability",
+        "start": "0",
+        "end": "240"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:availability:t0_t270": {
+      "query": {
+        "type": "cumulative",
+        "feat": "availability",
+        "start": "0",
+        "end": "270"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:availability:t0_t30": {
+      "query": {
+        "type": "cumulative",
+        "feat": "availability",
+        "start": "0",
+        "end": "30"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:availability:t0_t300": {
+      "query": {
+        "type": "cumulative",
+        "feat": "availability",
+        "start": "0",
+        "end": "300"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:availability:t0_t60": {
+      "query": {
+        "type": "cumulative",
+        "feat": "availability",
+        "start": "0",
+        "end": "60"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:availability:t0_t90": {
+      "query": {
+        "type": "cumulative",
+        "feat": "availability",
+        "start": "0",
+        "end": "90"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:goodput:t0_t120": {
+      "query": {
+        "type": "cumulative",
+        "feat": "goodput",
+        "start": "0",
+        "end": "120"
+      },
+      "samples": [
+        133.33333333333334,
+        153.33333333333334,
+        160.0,
+        160.0,
+        166.66666666666666,
+        193.33333333333334
+      ],
+      "mean": 161.11111111111111,
+      "stddev": 17.812466157645996
+    },
+    "cumulative:goodput:t0_t150": {
+      "query": {
+        "type": "cumulative",
+        "feat": "goodput",
+        "start": "0",
+        "end": "150"
+      },
+      "samples": [
+        154.66666666666666,
+        154.66666666666666,
+        160.0,
+        160.0,
+        165.33333333333334,
+        192.0
+      ],
+      "mean": 164.44444444444443,
+      "stddev": 12.850517595378633
+    },
+    "cumulative:goodput:t0_t180": {
+      "query": {
+        "type": "cumulative",
+        "feat": "goodput",
+        "start": "0",
+        "end": "180"
+      },
+      "samples": [
+        151.11111111111111,
+        155.55555555555554,
+        160.0,
+        164.44444444444446,
+        168.88888888888889,
+        186.66666666666666
+      ],
+      "mean": 164.44444444444443,
+      "stddev": 11.475506210984937
+    },
+    "cumulative:goodput:t0_t210": {
+      "query": {
+        "type": "cumulative",
+        "feat": "goodput",
+        "start": "0",
+        "end": "210"
+      },
+      "samples": [
+        148.57142857142858,
+        152.38095238095238,
+        160.0,
+        163.8095238095238,
+        171.42857142857142,
+        190.47619047619048
+      ],
+      "mean": 164.44444444444443,
+      "stddev": 13.808611537099393
+    },
+    "cumulative:goodput:t0_t240": {
+      "query": {
+        "type": "cumulative",
+        "feat": "goodput",
+        "start": "0",
+        "end": "240"
+      },
+      "samples": [
+        153.33333333333334,
+        160.0,
+        163.33333333333334,
+        166.66666666666666,
+        166.66666666666666,
+        190.0
+      ],
+      "mean": 166.66666666666666,
+      "stddev": 11.385500851066219
+    },
+    "cumulative:goodput:t0_t270": {
+      "query": {
+        "type": "cumulative",
+        "feat": "goodput",
+        "start": "0",
+        "end": "270"
+      },
+      "samples": [
+        154.07407407407408,
+        165.92592592592592,
+        168.88888888888889,
+        168.88888888888889,
+        168.88888888888889,
+        183.7037037037037
+      ],
+      "mean": 168.39506172839506,
+      "stddev": 8.624320590900235
+    },
+    "cumulative:goodput:t0_t30": {
+      "query": {
+        "type": "cumulative",
+        "feat": "goodput",
+        "start": "0",
+        "end": "30"
+      },
+      "samples": [
+        106.66666666666667,
+        133.33333333333334,
+        133.33333333333334,
+        160.0,
+        160.0,
+        186.66666666666666
+      ],
+      "mean": 146.66666666666666,
+      "stddev": 25.531389540169013
+    },
+    "cumulative:goodput:t0_t300": {
+      "query": {
+        "type": "cumulative",
+        "feat": "goodput",
+        "start": "0",
+        "end": "300"
+      },
+      "samples": [
+        154.66666666666666,
+        168.0,
+        168.0,
+        168.0,
+        170.66666666666666,
+        178.66666666666666
+      ],
+      "mean": 168.0,
+      "stddev": 7.055336829505575
+    },
+    "cumulative:goodput:t0_t60": {
+      "query": {
+        "type": "cumulative",
+        "feat": "goodput",
+        "start": "0",
+        "end": "60"
+      },
+      "samples": [
+        133.33333333333334,
+        146.66666666666666,
+        160.0,
+        173.33333333333334,
+        186.66666666666666,
+        200.0
+      ],
+      "mean": 166.66666666666666,
+      "stddev": 22.771001702132438
+    },
+    "cumulative:goodput:t0_t90": {
+      "query": {
+        "type": "cumulative",
+        "feat": "goodput",
+        "start": "0",
+        "end": "90"
+      },
+      "samples": [
+        133.33333333333334,
+        151.11111111111111,
+        151.11111111111111,
+        168.88888888888889,
+        168.88888888888889,
+        204.44444444444446
+      ],
+      "mean": 162.96296296296296,
+      "stddev": 22.17278451421595
+    },
+    "cumulative:integrity:alice_1:t0_t120": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "120",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:integrity:alice_1:t0_t150": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "150",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:integrity:alice_1:t0_t180": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "180",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:integrity:alice_1:t0_t210": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "210",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:integrity:alice_1:t0_t240": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "240",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:integrity:alice_1:t0_t270": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "270",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:integrity:alice_1:t0_t30": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "30",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:integrity:alice_1:t0_t300": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "300",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:integrity:alice_1:t0_t60": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "60",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:integrity:alice_1:t0_t90": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "90",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "cumulative:integrity:alice_2:t0_t120": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "120",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.0,
+        0.03448275862068961,
+        0.040000000000000036,
+        0.04347826086956519,
+        0.08333333333333337,
+        0.08333333333333337
+      ],
+      "mean": 0.04743794769282026,
+      "stddev": 0.029057860128208293
+    },
+    "cumulative:integrity:alice_2:t0_t150": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "150",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.0,
+        0.032258064516129004,
+        0.06666666666666665,
+        0.06666666666666665,
+        0.10344827586206895,
+        0.10344827586206895
+      ],
+      "mean": 0.06208132492893337,
+      "stddev": 0.03698652399477013
+    },
+    "cumulative:integrity:alice_2:t0_t180": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "180",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.0,
+        0.02857142857142858,
+        0.04761904761904767,
+        0.05555555555555558,
+        0.05882352941176472,
+        0.1351351351351351
+      ],
+      "mean": 0.05428411604882194,
+      "stddev": 0.04125417314058454
+    },
+    "cumulative:integrity:alice_2:t0_t210": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "210",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.0,
+        0.022222222222222254,
+        0.02564102564102566,
+        0.040000000000000036,
+        0.050000000000000044,
+        0.06976744186046513
+      ],
+      "mean": 0.03460511495395219,
+      "stddev": 0.02211221914957686
+    },
+    "cumulative:integrity:alice_2:t0_t240": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "240",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.0,
+        0.01754385964912286,
+        0.040000000000000036,
+        0.04166666666666663,
+        0.04347826086956519,
+        0.061224489795918324
+      ],
+      "mean": 0.03398554616354551,
+      "stddev": 0.019801478704484027
+    },
+    "cumulative:integrity:alice_2:t0_t270": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "270",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.0,
+        0.01754385964912286,
+        0.01754385964912286,
+        0.0357142857142857,
+        0.038461538461538436,
+        0.08771929824561409
+      ],
+      "mean": 0.03283047361994732,
+      "stddev": 0.02768275475131562
+    },
+    "cumulative:integrity:alice_2:t0_t30": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "30",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.0,
+        0.1428571428571429,
+        0.19999999999999996,
+        0.19999999999999996,
+        0.33333333333333337,
+        0.33333333333333337
+      ],
+      "mean": 0.20158730158730162,
+      "stddev": 0.11460493337260126
+    },
+    "cumulative:integrity:alice_2:t0_t300": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "300",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.014925373134328401,
+        0.015873015873015928,
+        0.015873015873015928,
+        0.03125,
+        0.03448275862068961,
+        0.07936507936507942
+      ],
+      "mean": 0.03196154047768821,
+      "stddev": 0.022590081066276444
+    },
+    "cumulative:integrity:alice_2:t0_t60": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "60",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.0,
+        0.0,
+        0.0,
+        0.06666666666666665,
+        0.07692307692307687,
+        0.09090909090909094
+      ],
+      "mean": 0.039083139083139075,
+      "stddev": 0.039709605164920836
+    },
+    "cumulative:integrity:alice_2:t0_t90": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "90",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.04347826086956519,
+        0.052631578947368474,
+        0.052631578947368474,
+        0.05882352941176472,
+        0.05882352941176472,
+        0.06666666666666665
+      ],
+      "mean": 0.055509190709083035,
+      "stddev": 0.007161977421564066
+    },
+    "cumulative:integrity:t0_t120": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "120"
+      },
+      "samples": [
+        0.5,
+        0.5172413793103448,
+        0.52,
+        0.5217391304347826,
+        0.5416666666666667,
+        0.5416666666666667
+      ],
+      "mean": 0.5237189738464102,
+      "stddev": 0.014528930064104174
+    },
+    "cumulative:integrity:t0_t150": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "150"
+      },
+      "samples": [
+        0.5,
+        0.5161290322580645,
+        0.5333333333333333,
+        0.5333333333333333,
+        0.5517241379310345,
+        0.5517241379310345
+      ],
+      "mean": 0.5310406624644667,
+      "stddev": 0.018493261997385064
+    },
+    "cumulative:integrity:t0_t180": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "180"
+      },
+      "samples": [
+        0.5,
+        0.5142857142857142,
+        0.5238095238095238,
+        0.5277777777777778,
+        0.5294117647058824,
+        0.5675675675675675
+      ],
+      "mean": 0.5271420580244109,
+      "stddev": 0.020627086570292278
+    },
+    "cumulative:integrity:t0_t210": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "210"
+      },
+      "samples": [
+        0.5,
+        0.5111111111111111,
+        0.5128205128205128,
+        0.52,
+        0.525,
+        0.5348837209302326
+      ],
+      "mean": 0.5173025574769761,
+      "stddev": 0.011056109574788453
+    },
+    "cumulative:integrity:t0_t240": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "240"
+      },
+      "samples": [
+        0.5,
+        0.5087719298245614,
+        0.52,
+        0.5208333333333333,
+        0.5217391304347826,
+        0.5306122448979591
+      ],
+      "mean": 0.5169927730817727,
+      "stddev": 0.009900739352241996
+    },
+    "cumulative:integrity:t0_t270": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "270"
+      },
+      "samples": [
+        0.5,
+        0.5087719298245614,
+        0.5087719298245614,
+        0.5178571428571428,
+        0.5192307692307692,
+        0.543859649122807
+      ],
+      "mean": 0.5164152368099736,
+      "stddev": 0.013841377375657809
+    },
+    "cumulative:integrity:t0_t30": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "30"
+      },
+      "samples": [
+        0.5,
+        0.5714285714285714,
+        0.6,
+        0.6,
+        0.6666666666666667,
+        0.6666666666666667
+      ],
+      "mean": 0.6007936507936508,
+      "stddev": 0.05730246668630066
+    },
+    "cumulative:integrity:t0_t300": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "300"
+      },
+      "samples": [
+        0.5074626865671642,
+        0.5079365079365079,
+        0.5079365079365079,
+        0.515625,
+        0.5172413793103448,
+        0.5396825396825398
+      ],
+      "mean": 0.515980770238844,
+      "stddev": 0.011295040533138253
+    },
+    "cumulative:integrity:t0_t60": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "60"
+      },
+      "samples": [
+        0.5,
+        0.5,
+        0.5,
+        0.5333333333333333,
+        0.5384615384615384,
+        0.5454545454545454
+      ],
+      "mean": 0.5195415695415696,
+      "stddev": 0.019854802582460408
+    },
+    "cumulative:integrity:t0_t90": {
+      "query": {
+        "type": "cumulative",
+        "feat": "integrity",
+        "start": "0",
+        "end": "90"
+      },
+      "samples": [
+        0.5217391304347826,
+        0.5263157894736843,
+        0.5263157894736843,
+        0.5294117647058824,
+        0.5294117647058824,
+        0.5333333333333333
+      ],
+      "mean": 0.5277545953545415,
+      "stddev": 0.003580988710782025
+    },
+    "cumulative:latency0:t0_t120": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency0",
+        "start": "0",
+        "end": "120"
+      },
+      "samples": [
+        0.073,
+        0.073,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07366666666666666,
+      "stddev": 0.0004714045207910321
+    },
+    "cumulative:latency0:t0_t150": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency0",
+        "start": "0",
+        "end": "150"
+      },
+      "samples": [
+        0.073,
+        0.073,
+        0.073,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.0735,
+      "stddev": 0.0005000000000000004
+    },
+    "cumulative:latency0:t0_t180": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency0",
+        "start": "0",
+        "end": "180"
+      },
+      "samples": [
+        0.073,
+        0.073,
+        0.073,
+        0.073,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07333333333333332,
+      "stddev": 0.0004714045207910321
+    },
+    "cumulative:latency0:t0_t210": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency0",
+        "start": "0",
+        "end": "210"
+      },
+      "samples": [
+        0.073,
+        0.073,
+        0.073,
+        0.073,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07333333333333332,
+      "stddev": 0.0004714045207910321
+    },
+    "cumulative:latency0:t0_t240": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency0",
+        "start": "0",
+        "end": "240"
+      },
+      "samples": [
+        0.073,
+        0.073,
+        0.073,
+        0.073,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07333333333333332,
+      "stddev": 0.0004714045207910321
+    },
+    "cumulative:latency0:t0_t270": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency0",
+        "start": "0",
+        "end": "270"
+      },
+      "samples": [
+        0.073,
+        0.073,
+        0.073,
+        0.073,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07333333333333332,
+      "stddev": 0.0004714045207910321
+    },
+    "cumulative:latency0:t0_t30": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency0",
+        "start": "0",
+        "end": "30"
+      },
+      "samples": [
+        0.073,
+        0.073,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07366666666666666,
+      "stddev": 0.0004714045207910321
+    },
+    "cumulative:latency0:t0_t300": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency0",
+        "start": "0",
+        "end": "300"
+      },
+      "samples": [
+        0.073,
+        0.073,
+        0.073,
+        0.073,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07333333333333332,
+      "stddev": 0.0004714045207910321
+    },
+    "cumulative:latency0:t0_t60": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency0",
+        "start": "0",
+        "end": "60"
+      },
+      "samples": [
+        0.073,
+        0.073,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07366666666666666,
+      "stddev": 0.0004714045207910321
+    },
+    "cumulative:latency0:t0_t90": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency0",
+        "start": "0",
+        "end": "90"
+      },
+      "samples": [
+        0.073,
+        0.073,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07366666666666666,
+      "stddev": 0.0004714045207910321
+    },
+    "cumulative:latency100:t0_t120": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency100",
+        "start": "0",
+        "end": "120"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.075,
+        0.075,
+        0.075,
+        0.075
+      ],
+      "mean": 0.07466666666666666,
+      "stddev": 0.0004714045207910321
+    },
+    "cumulative:latency100:t0_t150": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency100",
+        "start": "0",
+        "end": "150"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.075,
+        0.075,
+        0.075,
+        0.075
+      ],
+      "mean": 0.07466666666666666,
+      "stddev": 0.0004714045207910321
+    },
+    "cumulative:latency100:t0_t180": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency100",
+        "start": "0",
+        "end": "180"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.075,
+        0.075,
+        0.076,
+        0.078
+      ],
+      "mean": 0.07533333333333332,
+      "stddev": 0.0013743685418725548
+    },
+    "cumulative:latency100:t0_t210": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency100",
+        "start": "0",
+        "end": "210"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.075,
+        0.075,
+        0.076,
+        0.078
+      ],
+      "mean": 0.07533333333333332,
+      "stddev": 0.0013743685418725548
+    },
+    "cumulative:latency100:t0_t240": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency100",
+        "start": "0",
+        "end": "240"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.075,
+        0.075,
+        0.076,
+        0.078
+      ],
+      "mean": 0.07533333333333332,
+      "stddev": 0.0013743685418725548
+    },
+    "cumulative:latency100:t0_t270": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency100",
+        "start": "0",
+        "end": "270"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.075,
+        0.075,
+        0.076,
+        0.078
+      ],
+      "mean": 0.07533333333333332,
+      "stddev": 0.0013743685418725548
+    },
+    "cumulative:latency100:t0_t30": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency100",
+        "start": "0",
+        "end": "30"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.075,
+        0.075
+      ],
+      "mean": 0.07433333333333332,
+      "stddev": 0.0004714045207910321
+    },
+    "cumulative:latency100:t0_t300": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency100",
+        "start": "0",
+        "end": "300"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.075,
+        0.075,
+        0.076,
+        0.078
+      ],
+      "mean": 0.07533333333333332,
+      "stddev": 0.0013743685418725548
+    },
+    "cumulative:latency100:t0_t60": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency100",
+        "start": "0",
+        "end": "60"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.075,
+        0.075,
+        0.075
+      ],
+      "mean": 0.0745,
+      "stddev": 0.0005000000000000004
+    },
+    "cumulative:latency100:t0_t90": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency100",
+        "start": "0",
+        "end": "90"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.075,
+        0.075,
+        0.075,
+        0.075
+      ],
+      "mean": 0.07466666666666666,
+      "stddev": 0.0004714045207910321
+    },
+    "cumulative:latency25:t0_t120": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency25",
+        "start": "0",
+        "end": "120"
+      },
+      "samples": [
+        0.07375,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07395833333333333,
+      "stddev": 9.316949906249133e-05
+    },
+    "cumulative:latency25:t0_t150": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency25",
+        "start": "0",
+        "end": "150"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency25:t0_t180": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency25",
+        "start": "0",
+        "end": "180"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency25:t0_t210": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency25",
+        "start": "0",
+        "end": "210"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency25:t0_t240": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency25",
+        "start": "0",
+        "end": "240"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency25:t0_t270": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency25",
+        "start": "0",
+        "end": "270"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency25:t0_t30": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency25",
+        "start": "0",
+        "end": "30"
+      },
+      "samples": [
+        0.073,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07383333333333332,
+      "stddev": 0.0003726779962499653
+    },
+    "cumulative:latency25:t0_t300": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency25",
+        "start": "0",
+        "end": "300"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency25:t0_t60": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency25",
+        "start": "0",
+        "end": "60"
+      },
+      "samples": [
+        0.073,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07383333333333332,
+      "stddev": 0.0003726779962499653
+    },
+    "cumulative:latency25:t0_t90": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency25",
+        "start": "0",
+        "end": "90"
+      },
+      "samples": [
+        0.073,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07383333333333332,
+      "stddev": 0.0003726779962499653
+    },
+    "cumulative:latency50:t0_t120": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency50",
+        "start": "0",
+        "end": "120"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency50:t0_t150": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency50",
+        "start": "0",
+        "end": "150"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency50:t0_t180": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency50",
+        "start": "0",
+        "end": "180"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency50:t0_t210": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency50",
+        "start": "0",
+        "end": "210"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency50:t0_t240": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency50",
+        "start": "0",
+        "end": "240"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency50:t0_t270": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency50",
+        "start": "0",
+        "end": "270"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency50:t0_t30": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency50",
+        "start": "0",
+        "end": "30"
+      },
+      "samples": [
+        0.0735,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07391666666666667,
+      "stddev": 0.00018633899812498265
+    },
+    "cumulative:latency50:t0_t300": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency50",
+        "start": "0",
+        "end": "300"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency50:t0_t60": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency50",
+        "start": "0",
+        "end": "60"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency50:t0_t90": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency50",
+        "start": "0",
+        "end": "90"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency75:t0_t120": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency75",
+        "start": "0",
+        "end": "120"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency75:t0_t150": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency75",
+        "start": "0",
+        "end": "150"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency75:t0_t180": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency75",
+        "start": "0",
+        "end": "180"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency75:t0_t210": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency75",
+        "start": "0",
+        "end": "210"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency75:t0_t240": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency75",
+        "start": "0",
+        "end": "240"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency75:t0_t270": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency75",
+        "start": "0",
+        "end": "270"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency75:t0_t30": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency75",
+        "start": "0",
+        "end": "30"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.07425,
+        0.075
+      ],
+      "mean": 0.07420833333333333,
+      "stddev": 0.00036562351614133874
+    },
+    "cumulative:latency75:t0_t300": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency75",
+        "start": "0",
+        "end": "300"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency75:t0_t60": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency75",
+        "start": "0",
+        "end": "60"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "cumulative:latency75:t0_t90": {
+      "query": {
+        "type": "cumulative",
+        "feat": "latency75",
+        "start": "0",
+        "end": "90"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "independent:availability:t0_t30": {
+      "query": {
+        "type": "independent",
+        "feat": "availability",
+        "start": "0",
+        "end": "30"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:availability:t120_t150": {
+      "query": {
+        "type": "independent",
+        "feat": "availability",
+        "start": "120",
+        "end": "150"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:availability:t150_t180": {
+      "query": {
+        "type": "independent",
+        "feat": "availability",
+        "start": "150",
+        "end": "180"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:availability:t180_t210": {
+      "query": {
+        "type": "independent",
+        "feat": "availability",
+        "start": "180",
+        "end": "210"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:availability:t210_t240": {
+      "query": {
+        "type": "independent",
+        "feat": "availability",
+        "start": "210",
+        "end": "240"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:availability:t240_t270": {
+      "query": {
+        "type": "independent",
+        "feat": "availability",
+        "start": "240",
+        "end": "270"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:availability:t270_t300": {
+      "query": {
+        "type": "independent",
+        "feat": "availability",
+        "start": "270",
+        "end": "300"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:availability:t30_t60": {
+      "query": {
+        "type": "independent",
+        "feat": "availability",
+        "start": "30",
+        "end": "60"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:availability:t60_t90": {
+      "query": {
+        "type": "independent",
+        "feat": "availability",
+        "start": "60",
+        "end": "90"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:availability:t90_t120": {
+      "query": {
+        "type": "independent",
+        "feat": "availability",
+        "start": "90",
+        "end": "120"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:goodput:t0_t30": {
+      "query": {
+        "type": "independent",
+        "feat": "goodput",
+        "start": "0",
+        "end": "30"
+      },
+      "samples": [
+        106.66666666666667,
+        133.33333333333334,
+        133.33333333333334,
+        160.0,
+        160.0,
+        186.66666666666666
+      ],
+      "mean": 146.66666666666666,
+      "stddev": 25.531389540169013
+    },
+    "independent:goodput:t120_t150": {
+      "query": {
+        "type": "independent",
+        "feat": "goodput",
+        "start": "120",
+        "end": "150"
+      },
+      "samples": [
+        133.33333333333334,
+        160.0,
+        160.0,
+        186.66666666666666,
+        186.66666666666666,
+        240.0
+      ],
+      "mean": 177.7777777777778,
+      "stddev": 33.25917677132392
+    },
+    "independent:goodput:t150_t180": {
+      "query": {
+        "type": "independent",
+        "feat": "goodput",
+        "start": "150",
+        "end": "180"
+      },
+      "samples": [
+        106.66666666666667,
+        106.66666666666667,
+        160.0,
+        160.0,
+        213.33333333333334,
+        240.0
+      ],
+      "mean": 164.44444444444446,
+      "stddev": 49.69039949999533
+    },
+    "independent:goodput:t180_t210": {
+      "query": {
+        "type": "independent",
+        "feat": "goodput",
+        "start": "180",
+        "end": "210"
+      },
+      "samples": [
+        106.66666666666667,
+        160.0,
+        160.0,
+        160.0,
+        186.66666666666666,
+        213.33333333333334
+      ],
+      "mean": 164.44444444444443,
+      "stddev": 32.35604395235786
+    },
+    "independent:goodput:t210_t240": {
+      "query": {
+        "type": "independent",
+        "feat": "goodput",
+        "start": "210",
+        "end": "240"
+      },
+      "samples": [
+        133.33333333333334,
+        160.0,
+        186.66666666666666,
+        186.66666666666666,
+        213.33333333333334,
+        213.33333333333334
+      ],
+      "mean": 182.2222222222222,
+      "stddev": 28.458329944145994
+    },
+    "independent:goodput:t240_t270": {
+      "query": {
+        "type": "independent",
+        "feat": "goodput",
+        "start": "240",
+        "end": "270"
+      },
+      "samples": [
+        106.66666666666667,
+        133.33333333333334,
+        186.66666666666666,
+        186.66666666666666,
+        186.66666666666666,
+        293.3333333333333
+      ],
+      "mean": 182.2222222222222,
+      "stddev": 58.45753972429291
+    },
+    "independent:goodput:t270_t300": {
+      "query": {
+        "type": "independent",
+        "feat": "goodput",
+        "start": "270",
+        "end": "300"
+      },
+      "samples": [
+        133.33333333333334,
+        160.0,
+        160.0,
+        160.0,
+        186.66666666666666,
+        186.66666666666666
+      ],
+      "mean": 164.44444444444443,
+      "stddev": 18.32491389163404
+    },
+    "independent:goodput:t30_t60": {
+      "query": {
+        "type": "independent",
+        "feat": "goodput",
+        "start": "30",
+        "end": "60"
+      },
+      "samples": [
+        160.0,
+        160.0,
+        160.0,
+        213.33333333333334,
+        213.33333333333334,
+        213.33333333333334
+      ],
+      "mean": 186.66666666666666,
+      "stddev": 26.66666666666667
+    },
+    "independent:goodput:t60_t90": {
+      "query": {
+        "type": "independent",
+        "feat": "goodput",
+        "start": "60",
+        "end": "90"
+      },
+      "samples": [
+        133.33333333333334,
+        133.33333333333334,
+        133.33333333333334,
+        160.0,
+        160.0,
+        213.33333333333334
+      ],
+      "mean": 155.55555555555557,
+      "stddev": 28.458329944145994
+    },
+    "independent:goodput:t90_t120": {
+      "query": {
+        "type": "independent",
+        "feat": "goodput",
+        "start": "90",
+        "end": "120"
+      },
+      "samples": [
+        133.33333333333334,
+        133.33333333333334,
+        160.0,
+        160.0,
+        160.0,
+        186.66666666666666
+      ],
+      "mean": 155.55555555555557,
+      "stddev": 18.32491389163404
+    },
+    "independent:integrity:alice_1:t0_t30": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "0",
+        "end": "30",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:integrity:alice_1:t120_t150": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "120",
+        "end": "150",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:integrity:alice_1:t150_t180": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "150",
+        "end": "180",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:integrity:alice_1:t180_t210": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "180",
+        "end": "210",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:integrity:alice_1:t210_t240": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "210",
+        "end": "240",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:integrity:alice_1:t240_t270": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "240",
+        "end": "270",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:integrity:alice_1:t270_t300": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "270",
+        "end": "300",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:integrity:alice_1:t30_t60": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "30",
+        "end": "60",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:integrity:alice_1:t60_t90": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "60",
+        "end": "90",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:integrity:alice_1:t90_t120": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "90",
+        "end": "120",
+        "client": "alice_1"
+      },
+      "samples": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "stddev": 0.0
+    },
+    "independent:integrity:alice_2:t0_t30": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "0",
+        "end": "30",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.0,
+        0.1428571428571429,
+        0.19999999999999996,
+        0.19999999999999996,
+        0.33333333333333337,
+        0.33333333333333337
+      ],
+      "mean": 0.20158730158730162,
+      "stddev": 0.11460493337260126
+    },
+    "independent:integrity:alice_2:t120_t150": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "120",
+        "end": "150",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.0,
+        0.0,
+        0.1428571428571429,
+        0.1428571428571429,
+        0.19999999999999996,
+        0.33333333333333337
+      ],
+      "mean": 0.13650793650793652,
+      "stddev": 0.1155572998298495
+    },
+    "independent:integrity:alice_2:t150_t180": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "150",
+        "end": "180",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.0,
+        0.0,
+        0.0,
+        0.25,
+        0.33333333333333337,
+        0.33333333333333337
+      ],
+      "mean": 0.1527777777777778,
+      "stddev": 0.1552824984374854
+    },
+    "independent:integrity:alice_2:t180_t210": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "180",
+        "end": "210",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.0,
+        0.0,
+        0.0,
+        0.1428571428571429,
+        0.33333333333333337,
+        0.33333333333333337
+      ],
+      "mean": 0.13492063492063494,
+      "stddev": 0.1491134462544122
+    },
+    "independent:integrity:alice_2:t210_t240": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "210",
+        "end": "240",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.0,
+        0.0,
+        0.0,
+        0.1428571428571429,
+        0.1428571428571429,
+        0.19999999999999996
+      ],
+      "mean": 0.08095238095238096,
+      "stddev": 0.0831630914122523
+    },
+    "independent:integrity:alice_2:t240_t270": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "240",
+        "end": "270",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.0,
+        0.1428571428571429,
+        0.1428571428571429,
+        0.19999999999999996,
+        0.2727272727272727,
+        0.4285714285714286
+      ],
+      "mean": 0.19783549783549784,
+      "stddev": 0.13167931752601844
+    },
+    "independent:integrity:alice_2:t270_t300": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "270",
+        "end": "300",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.0,
+        0.0,
+        0.0,
+        0.1428571428571429,
+        0.1428571428571429,
+        0.19999999999999996
+      ],
+      "mean": 0.08095238095238096,
+      "stddev": 0.0831630914122523
+    },
+    "independent:integrity:alice_2:t30_t60": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "30",
+        "end": "60",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.0,
+        0.0,
+        0.25,
+        0.25,
+        0.33333333333333337,
+        0.33333333333333337
+      ],
+      "mean": 0.19444444444444445,
+      "stddev": 0.14163943093313291
+    },
+    "independent:integrity:alice_2:t60_t90": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "60",
+        "end": "90",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.19999999999999996,
+        0.19999999999999996,
+        0.19999999999999996,
+        0.25,
+        0.33333333333333337,
+        0.33333333333333337
+      ],
+      "mean": 0.25277777777777777,
+      "stddev": 0.05964141820439973
+    },
+    "independent:integrity:alice_2:t90_t120": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "90",
+        "end": "120",
+        "client": "alice_2"
+      },
+      "samples": [
+        0.0,
+        0.0,
+        0.0,
+        0.1428571428571429,
+        0.19999999999999996,
+        0.19999999999999996
+      ],
+      "mean": 0.09047619047619047,
+      "stddev": 0.09245946589975046
+    },
+    "independent:integrity:t0_t30": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "0",
+        "end": "30"
+      },
+      "samples": [
+        0.5,
+        0.5714285714285714,
+        0.6,
+        0.6,
+        0.6666666666666667,
+        0.6666666666666667
+      ],
+      "mean": 0.6007936507936508,
+      "stddev": 0.05730246668630066
+    },
+    "independent:integrity:t120_t150": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "120",
+        "end": "150"
+      },
+      "samples": [
+        0.5,
+        0.5,
+        0.5714285714285714,
+        0.5714285714285714,
+        0.6,
+        0.6666666666666667
+      ],
+      "mean": 0.5682539682539682,
+      "stddev": 0.05777864991492477
+    },
+    "independent:integrity:t150_t180": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "150",
+        "end": "180"
+      },
+      "samples": [
+        0.5,
+        0.5,
+        0.5,
+        0.625,
+        0.6666666666666667,
+        0.6666666666666667
+      ],
+      "mean": 0.576388888888889,
+      "stddev": 0.07764124921874273
+    },
+    "independent:integrity:t180_t210": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "180",
+        "end": "210"
+      },
+      "samples": [
+        0.5,
+        0.5,
+        0.5,
+        0.5714285714285714,
+        0.6666666666666667,
+        0.6666666666666667
+      ],
+      "mean": 0.5674603174603176,
+      "stddev": 0.07455672312720613
+    },
+    "independent:integrity:t210_t240": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "210",
+        "end": "240"
+      },
+      "samples": [
+        0.5,
+        0.5,
+        0.5,
+        0.5714285714285714,
+        0.5714285714285714,
+        0.6
+      ],
+      "mean": 0.5404761904761904,
+      "stddev": 0.041581545706126134
+    },
+    "independent:integrity:t240_t270": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "240",
+        "end": "270"
+      },
+      "samples": [
+        0.5,
+        0.5714285714285714,
+        0.5714285714285714,
+        0.6,
+        0.6363636363636364,
+        0.7142857142857143
+      ],
+      "mean": 0.598917748917749,
+      "stddev": 0.06583965876300923
+    },
+    "independent:integrity:t270_t300": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "270",
+        "end": "300"
+      },
+      "samples": [
+        0.5,
+        0.5,
+        0.5,
+        0.5714285714285714,
+        0.5714285714285714,
+        0.6
+      ],
+      "mean": 0.5404761904761904,
+      "stddev": 0.041581545706126134
+    },
+    "independent:integrity:t30_t60": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "30",
+        "end": "60"
+      },
+      "samples": [
+        0.5,
+        0.5,
+        0.625,
+        0.625,
+        0.6666666666666667,
+        0.6666666666666667
+      ],
+      "mean": 0.5972222222222222,
+      "stddev": 0.07081971546656649
+    },
+    "independent:integrity:t60_t90": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "60",
+        "end": "90"
+      },
+      "samples": [
+        0.6,
+        0.6,
+        0.6,
+        0.625,
+        0.6666666666666667,
+        0.6666666666666667
+      ],
+      "mean": 0.6263888888888889,
+      "stddev": 0.029820709102199888
+    },
+    "independent:integrity:t90_t120": {
+      "query": {
+        "type": "independent",
+        "feat": "integrity",
+        "start": "90",
+        "end": "120"
+      },
+      "samples": [
+        0.5,
+        0.5,
+        0.5,
+        0.5714285714285714,
+        0.6,
+        0.6
+      ],
+      "mean": 0.5452380952380952,
+      "stddev": 0.04622973294987522
+    },
+    "independent:latency0:t0_t30": {
+      "query": {
+        "type": "independent",
+        "feat": "latency0",
+        "start": "0",
+        "end": "30"
+      },
+      "samples": [
+        0.073,
+        0.073,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07366666666666666,
+      "stddev": 0.0004714045207910321
+    },
+    "independent:latency0:t120_t150": {
+      "query": {
+        "type": "independent",
+        "feat": "latency0",
+        "start": "120",
+        "end": "150"
+      },
+      "samples": [
+        0.073,
+        0.073,
+        0.073,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.0735,
+      "stddev": 0.0005000000000000004
+    },
+    "independent:latency0:t150_t180": {
+      "query": {
+        "type": "independent",
+        "feat": "latency0",
+        "start": "150",
+        "end": "180"
+      },
+      "samples": [
+        0.073,
+        0.073,
+        0.073,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.0735,
+      "stddev": 0.0005000000000000004
+    },
+    "independent:latency0:t180_t210": {
+      "query": {
+        "type": "independent",
+        "feat": "latency0",
+        "start": "180",
+        "end": "210"
+      },
+      "samples": [
+        0.073,
+        0.073,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07366666666666666,
+      "stddev": 0.0004714045207910321
+    },
+    "independent:latency0:t210_t240": {
+      "query": {
+        "type": "independent",
+        "feat": "latency0",
+        "start": "210",
+        "end": "240"
+      },
+      "samples": [
+        0.073,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07383333333333332,
+      "stddev": 0.0003726779962499653
+    },
+    "independent:latency0:t240_t270": {
+      "query": {
+        "type": "independent",
+        "feat": "latency0",
+        "start": "240",
+        "end": "270"
+      },
+      "samples": [
+        0.073,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07383333333333332,
+      "stddev": 0.0003726779962499653
+    },
+    "independent:latency0:t270_t300": {
+      "query": {
+        "type": "independent",
+        "feat": "latency0",
+        "start": "270",
+        "end": "300"
+      },
+      "samples": [
+        0.073,
+        0.073,
+        0.073,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.0735,
+      "stddev": 0.0005000000000000004
+    },
+    "independent:latency0:t30_t60": {
+      "query": {
+        "type": "independent",
+        "feat": "latency0",
+        "start": "30",
+        "end": "60"
+      },
+      "samples": [
+        0.073,
+        0.073,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07366666666666666,
+      "stddev": 0.0004714045207910321
+    },
+    "independent:latency0:t60_t90": {
+      "query": {
+        "type": "independent",
+        "feat": "latency0",
+        "start": "60",
+        "end": "90"
+      },
+      "samples": [
+        0.073,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07383333333333332,
+      "stddev": 0.0003726779962499653
+    },
+    "independent:latency0:t90_t120": {
+      "query": {
+        "type": "independent",
+        "feat": "latency0",
+        "start": "90",
+        "end": "120"
+      },
+      "samples": [
+        0.073,
+        0.073,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07366666666666666,
+      "stddev": 0.0004714045207910321
+    },
+    "independent:latency100:t0_t30": {
+      "query": {
+        "type": "independent",
+        "feat": "latency100",
+        "start": "0",
+        "end": "30"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.075,
+        0.075
+      ],
+      "mean": 0.07433333333333332,
+      "stddev": 0.0004714045207910321
+    },
+    "independent:latency100:t120_t150": {
+      "query": {
+        "type": "independent",
+        "feat": "latency100",
+        "start": "120",
+        "end": "150"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.075,
+        0.075,
+        0.075
+      ],
+      "mean": 0.0745,
+      "stddev": 0.0005000000000000004
+    },
+    "independent:latency100:t150_t180": {
+      "query": {
+        "type": "independent",
+        "feat": "latency100",
+        "start": "150",
+        "end": "180"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.075,
+        0.076,
+        0.078
+      ],
+      "mean": 0.07516666666666666,
+      "stddev": 0.001462494064565355
+    },
+    "independent:latency100:t180_t210": {
+      "query": {
+        "type": "independent",
+        "feat": "latency100",
+        "start": "180",
+        "end": "210"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.075,
+        0.075
+      ],
+      "mean": 0.07433333333333332,
+      "stddev": 0.0004714045207910321
+    },
+    "independent:latency100:t210_t240": {
+      "query": {
+        "type": "independent",
+        "feat": "latency100",
+        "start": "210",
+        "end": "240"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.075,
+        0.075,
+        0.075
+      ],
+      "mean": 0.0745,
+      "stddev": 0.0005000000000000004
+    },
+    "independent:latency100:t240_t270": {
+      "query": {
+        "type": "independent",
+        "feat": "latency100",
+        "start": "240",
+        "end": "270"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.075,
+        0.075
+      ],
+      "mean": 0.07433333333333332,
+      "stddev": 0.0004714045207910321
+    },
+    "independent:latency100:t270_t300": {
+      "query": {
+        "type": "independent",
+        "feat": "latency100",
+        "start": "270",
+        "end": "300"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.075,
+        0.075,
+        0.075
+      ],
+      "mean": 0.0745,
+      "stddev": 0.0005000000000000004
+    },
+    "independent:latency100:t30_t60": {
+      "query": {
+        "type": "independent",
+        "feat": "latency100",
+        "start": "30",
+        "end": "60"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.075,
+        0.075
+      ],
+      "mean": 0.07433333333333332,
+      "stddev": 0.0004714045207910321
+    },
+    "independent:latency100:t60_t90": {
+      "query": {
+        "type": "independent",
+        "feat": "latency100",
+        "start": "60",
+        "end": "90"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.075,
+        0.075,
+        0.075
+      ],
+      "mean": 0.0745,
+      "stddev": 0.0005000000000000004
+    },
+    "independent:latency100:t90_t120": {
+      "query": {
+        "type": "independent",
+        "feat": "latency100",
+        "start": "90",
+        "end": "120"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.075,
+        0.075
+      ],
+      "mean": 0.07433333333333332,
+      "stddev": 0.0004714045207910321
+    },
+    "independent:latency25:t0_t30": {
+      "query": {
+        "type": "independent",
+        "feat": "latency25",
+        "start": "0",
+        "end": "30"
+      },
+      "samples": [
+        0.073,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07383333333333332,
+      "stddev": 0.0003726779962499653
+    },
+    "independent:latency25:t120_t150": {
+      "query": {
+        "type": "independent",
+        "feat": "latency25",
+        "start": "120",
+        "end": "150"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "independent:latency25:t150_t180": {
+      "query": {
+        "type": "independent",
+        "feat": "latency25",
+        "start": "150",
+        "end": "180"
+      },
+      "samples": [
+        0.07375,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07395833333333333,
+      "stddev": 9.316949906249133e-05
+    },
+    "independent:latency25:t180_t210": {
+      "query": {
+        "type": "independent",
+        "feat": "latency25",
+        "start": "180",
+        "end": "210"
+      },
+      "samples": [
+        0.07375,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07395833333333333,
+      "stddev": 9.316949906249133e-05
+    },
+    "independent:latency25:t210_t240": {
+      "query": {
+        "type": "independent",
+        "feat": "latency25",
+        "start": "210",
+        "end": "240"
+      },
+      "samples": [
+        0.0735,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07391666666666667,
+      "stddev": 0.00018633899812498265
+    },
+    "independent:latency25:t240_t270": {
+      "query": {
+        "type": "independent",
+        "feat": "latency25",
+        "start": "240",
+        "end": "270"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "independent:latency25:t270_t300": {
+      "query": {
+        "type": "independent",
+        "feat": "latency25",
+        "start": "270",
+        "end": "300"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "independent:latency25:t30_t60": {
+      "query": {
+        "type": "independent",
+        "feat": "latency25",
+        "start": "30",
+        "end": "60"
+      },
+      "samples": [
+        0.07325,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.073875,
+      "stddev": 0.00027950849718747395
+    },
+    "independent:latency25:t60_t90": {
+      "query": {
+        "type": "independent",
+        "feat": "latency25",
+        "start": "60",
+        "end": "90"
+      },
+      "samples": [
+        0.073,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07383333333333332,
+      "stddev": 0.0003726779962499653
+    },
+    "independent:latency25:t90_t120": {
+      "query": {
+        "type": "independent",
+        "feat": "latency25",
+        "start": "90",
+        "end": "120"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "independent:latency50:t0_t30": {
+      "query": {
+        "type": "independent",
+        "feat": "latency50",
+        "start": "0",
+        "end": "30"
+      },
+      "samples": [
+        0.0735,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.07391666666666667,
+      "stddev": 0.00018633899812498265
+    },
+    "independent:latency50:t120_t150": {
+      "query": {
+        "type": "independent",
+        "feat": "latency50",
+        "start": "120",
+        "end": "150"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "independent:latency50:t150_t180": {
+      "query": {
+        "type": "independent",
+        "feat": "latency50",
+        "start": "150",
+        "end": "180"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "independent:latency50:t180_t210": {
+      "query": {
+        "type": "independent",
+        "feat": "latency50",
+        "start": "180",
+        "end": "210"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "independent:latency50:t210_t240": {
+      "query": {
+        "type": "independent",
+        "feat": "latency50",
+        "start": "210",
+        "end": "240"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "independent:latency50:t240_t270": {
+      "query": {
+        "type": "independent",
+        "feat": "latency50",
+        "start": "240",
+        "end": "270"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "independent:latency50:t270_t300": {
+      "query": {
+        "type": "independent",
+        "feat": "latency50",
+        "start": "270",
+        "end": "300"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "independent:latency50:t30_t60": {
+      "query": {
+        "type": "independent",
+        "feat": "latency50",
+        "start": "30",
+        "end": "60"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "independent:latency50:t60_t90": {
+      "query": {
+        "type": "independent",
+        "feat": "latency50",
+        "start": "60",
+        "end": "90"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "independent:latency50:t90_t120": {
+      "query": {
+        "type": "independent",
+        "feat": "latency50",
+        "start": "90",
+        "end": "120"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "independent:latency75:t0_t30": {
+      "query": {
+        "type": "independent",
+        "feat": "latency75",
+        "start": "0",
+        "end": "30"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.07425,
+        0.075
+      ],
+      "mean": 0.07420833333333333,
+      "stddev": 0.00036562351614133874
+    },
+    "independent:latency75:t120_t150": {
+      "query": {
+        "type": "independent",
+        "feat": "latency75",
+        "start": "120",
+        "end": "150"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.0745
+      ],
+      "mean": 0.07408333333333333,
+      "stddev": 0.00018633899812498265
+    },
+    "independent:latency75:t150_t180": {
+      "query": {
+        "type": "independent",
+        "feat": "latency75",
+        "start": "150",
+        "end": "180"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.07425,
+        0.0745,
+        0.07475
+      ],
+      "mean": 0.07425,
+      "stddev": 0.0002886751345948131
+    },
+    "independent:latency75:t180_t210": {
+      "query": {
+        "type": "independent",
+        "feat": "latency75",
+        "start": "180",
+        "end": "210"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.07475,
+        0.07475
+      ],
+      "mean": 0.07425,
+      "stddev": 0.0003535533905932741
+    },
+    "independent:latency75:t210_t240": {
+      "query": {
+        "type": "independent",
+        "feat": "latency75",
+        "start": "210",
+        "end": "240"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.07425
+      ],
+      "mean": 0.07404166666666666,
+      "stddev": 9.316949906249133e-05
+    },
+    "independent:latency75:t240_t270": {
+      "query": {
+        "type": "independent",
+        "feat": "latency75",
+        "start": "240",
+        "end": "270"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.0745
+      ],
+      "mean": 0.07408333333333333,
+      "stddev": 0.00018633899812498265
+    },
+    "independent:latency75:t270_t300": {
+      "query": {
+        "type": "independent",
+        "feat": "latency75",
+        "start": "270",
+        "end": "300"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "independent:latency75:t30_t60": {
+      "query": {
+        "type": "independent",
+        "feat": "latency75",
+        "start": "30",
+        "end": "60"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    },
+    "independent:latency75:t60_t90": {
+      "query": {
+        "type": "independent",
+        "feat": "latency75",
+        "start": "60",
+        "end": "90"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.07475
+      ],
+      "mean": 0.074125,
+      "stddev": 0.00027950849718747395
+    },
+    "independent:latency75:t90_t120": {
+      "query": {
+        "type": "independent",
+        "feat": "latency75",
+        "start": "90",
+        "end": "120"
+      },
+      "samples": [
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074,
+        0.074
+      ],
+      "mean": 0.074,
+      "stddev": 0.0
+    }
+  }
+}
