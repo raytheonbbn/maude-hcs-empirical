@@ -84,7 +84,7 @@ def plot_latency(tb_latency, sim_latency, tb_samples, sim_samples, output_path):
             ax.fill_between(sim_times, np.array(sim_means) - np.array(sim_stds), np.array(sim_means) + np.array(sim_stds), color='red', alpha=0.2)
             
         ax.set_title(f"{titles[i]} Latency")
-        ax.set_xlabel('Time Window (Normalized seconds)')
+        ax.set_xlabel('Time Window (seconds)')
         ax.set_ylabel('Latency (s)')
         ax.grid(True, alpha=0.3)
         ax.legend()
@@ -127,7 +127,7 @@ def plot_single_metric(tb_data, sim_data, tb_samples, sim_samples, metric, outpu
         plt.close(fig)
         return
         
-    ax.set_xlabel('Time Window (Normalized seconds)')
+    ax.set_xlabel('Time Window (seconds)')
     ax.set_ylabel(metric.capitalize())
     ax.grid(True, alpha=0.3)
     ax.legend()
