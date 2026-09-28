@@ -1,5 +1,5 @@
 env: validation_only_webtunnel
-conversation_duration: 300
+conversation_duration: 6030
 max_start_delay: 30
 one_way_availability: 30
 analysis_window_size: 30
