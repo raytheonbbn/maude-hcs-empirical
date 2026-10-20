@@ -1,0 +1,130 @@
+env: test
+conversation_duration: 600
+max_start_delay: 900
+one_way_availability: 30
+analysis_window_size: 600
+network:
+  minio_net:
+    network: minio
+    params:
+      upstream:
+        latency: 0
+        loss_profile: none
+      downstream:
+        latency: 0
+        loss_profile: none
+  server_net:
+    network: server
+    params:
+      upstream:
+        latency: 10
+        loss_profile: excellent
+      downstream:
+        latency: 10
+        loss_profile: excellent
+  mastodon_net:
+    network: mastodon
+    params:
+      upstream:
+        latency: 5
+        loss_profile: good
+      downstream:
+        latency: 5
+        loss_profile: good
+  dns_net:
+    network: dns
+    params:
+      upstream:
+        latency: 20
+        loss_profile: good
+      downstream:
+        latency: 20
+        loss_profile: good
+  client_net_mastodon:
+    nat: false
+    network: client
+    params:
+      upstream:
+        latency: 20
+        loss_profile: excellent
+      downstream:
+        latency: 20
+        loss_profile: excellent
+  client_net_obfs:
+    nat: false
+    network: client
+    params:
+      upstream:
+        latency: 15
+        loss_profile: none
+      downstream:
+        latency: 15
+        loss_profile: none
+  client_net_iodine:
+    nat: false
+    network: client
+    params:
+      upstream:
+        latency: 10
+        loss_profile: none
+      downstream:
+        latency: 10
+        loss_profile: none
+  client_net_sky:
+    nat: false
+    network: client
+    params:
+      upstream:
+        latency: 20
+        loss_profile: none
+      downstream:
+        latency: 20
+        loss_profile: none
+  client_net_racetunnel:
+    nat: false
+    network: client
+    params:
+      upstream:
+        latency: 30
+        loss_profile: none
+      downstream:
+        latency: 30
+        loss_profile: none
+nodes:
+  node_type_racetunnel:
+    channel_config:
+    - direction: bidirectional
+      channel: racetunnel
+      vars:
+        client:
+          user_model: ''
+        server:
+          user_model: ''
+    client_per_network:
+      client_net_racetunnel:
+        quantity: 2
+        profiles:
+          irc_casualchat: 1
+tgen:
+  tgen_type_irc:
+    tgen_per_network:
+      client_net_racetunnel:
+        quantity: 4
+        profiles:
+          irc_11: 0.25
+          irc_8: 0.5
+          irc_5: 0.25
+  tgen_type_gorilla:
+    tgen_per_network:
+      client_net_racetunnel:
+        quantity: 4
+        profiles:
+          irc_7: 0.5
+          irc_10: 0.5
+  tgen_type_ftp:
+    tgen_per_network:
+      client_net_racetunnel:
+        quantity: 4
+        profiles:
+          medium: 0.5
+          slow: 0.5

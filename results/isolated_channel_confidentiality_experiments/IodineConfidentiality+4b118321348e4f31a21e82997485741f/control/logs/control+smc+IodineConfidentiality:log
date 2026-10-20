@@ -1,0 +1,10 @@
+maude-hcs scheck \
+    --file /Users/lwest/Documents/pwnd2/maude-hcs/maude_hcs/lib/smc/smc_cp3.maude \
+    --nsims 256-256 \
+    --seed 105 \
+    --jobs 0 \
+    --dump /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmptwdge2n6/IodineConfidentiality+4b118321348e4f31a21e82997485741f/control/dumps/dump \
+    --test /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmptwdge2n6/IodineConfidentiality+4b118321348e4f31a21e82997485741f/control/test-run.maude \
+    --query /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmptwdge2n6/IodineConfidentiality+4b118321348e4f31a21e82997485741f/control/test.quatex \
+    --initial initConfig \
+    --format json

@@ -1,0 +1,116 @@
+env: control
+conversation_duration: 600
+max_start_delay: 900
+one_way_availability: 30
+analysis_window_size: 600
+network:
+  minio_net:
+    network: minio
+    params:
+      upstream:
+        latency: 0
+        loss_profile: none
+      downstream:
+        latency: 0
+        loss_profile: none
+  server_net:
+    network: server
+    params:
+      upstream:
+        latency: 10
+        loss_profile: excellent
+      downstream:
+        latency: 10
+        loss_profile: excellent
+  mastodon_net:
+    network: mastodon
+    params:
+      upstream:
+        latency: 5
+        loss_profile: good
+      downstream:
+        latency: 5
+        loss_profile: good
+  dns_net:
+    network: dns
+    params:
+      upstream:
+        latency: 20
+        loss_profile: good
+      downstream:
+        latency: 20
+        loss_profile: good
+  client_net_mastodon:
+    nat: false
+    network: client
+    params:
+      upstream:
+        latency: 20
+        loss_profile: excellent
+      downstream:
+        latency: 20
+        loss_profile: excellent
+  client_net_obfs:
+    nat: false
+    network: client
+    params:
+      upstream:
+        latency: 15
+        loss_profile: none
+      downstream:
+        latency: 15
+        loss_profile: none
+  client_net_iodine:
+    nat: false
+    network: client
+    params:
+      upstream:
+        latency: 10
+        loss_profile: none
+      downstream:
+        latency: 10
+        loss_profile: none
+  client_net_sky:
+    nat: false
+    network: client
+    params:
+      upstream:
+        latency: 20
+        loss_profile: none
+      downstream:
+        latency: 20
+        loss_profile: none
+  client_net_racetunnel:
+    nat: false
+    network: client
+    params:
+      upstream:
+        latency: 30
+        loss_profile: none
+      downstream:
+        latency: 30
+        loss_profile: none
+tgen:
+  tgen_type_irc:
+    tgen_per_network:
+      client_net_obfs:
+        quantity: 4
+        profiles:
+          irc_7: 0.5
+          irc_9: 0.5
+  tgen_type_gorilla:
+    tgen_per_network:
+      client_net_obfs:
+        quantity: 4
+        profiles:
+          irc_12: 0.25
+          irc_4: 0.5
+          irc_7: 0.25
+  tgen_type_ftp:
+    tgen_per_network:
+      client_net_obfs:
+        quantity: 4
+        profiles:
+          fast: 0.25
+          medium: 0.25
+          slow: 0.5
