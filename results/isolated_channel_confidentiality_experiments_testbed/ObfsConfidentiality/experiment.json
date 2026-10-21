@@ -1,0 +1,71 @@
+{
+  "name": "ObfsConfidentiality",
+  "yaml_chunk": "only_obfs",
+  "control_seed": 105,
+  "test_seed": 106,
+  "window_sizes": [
+    600
+  ],
+  "n_samples": 256,
+  "method": "p-value",
+  "alpha": 0.05,
+  "delta": 0.05,
+  "feats": [
+    "dnsQueryRate",
+    "dnsQuerySize",
+    "dnsRespSize",
+    "tcpUpRate",
+    "tcpDownRate",
+    "tcpUpToDownRate",
+    "tcpOutPktRate",
+    "tcpInPktRate",
+    "tcpOutToInPktRate",
+    "tcpPktSizeStdDev",
+    "tcpPktSize",
+    "tcpPktInterarrival",
+    "tcpDirectionChange",
+    "tcpActiveFlow",
+    "tcpNewCnx"
+  ],
+  "vantages": [
+    "ixpN",
+    "srvN",
+    "minN",
+    "masN",
+    "dnsN",
+    "cl[0]",
+    "cl[1]",
+    "cl[2]",
+    "cl[3]",
+    "cl[4]"
+  ],
+  "vantage_networks": {
+    "ixpN": null,
+    "srvN": "server_net",
+    "minN": "minio_net",
+    "masN": "mastodon_net",
+    "dnsN": "dns_net",
+    "cl[1]": "client_net_mastodon",
+    "cl[2]": "client_net_obfs",
+    "cl[3]": "client_net_iodine",
+    "cl[4]": "client_net_sky",
+    "cl[5]": "client_net_racetunnel"
+  },
+  "yaml": "/src/confidentiality/ObfsConfidentiality/experiment.yaml",
+  "yaml_sha256": "089f5bc0ba8759ba1d8f8b94528a1ed5d437c79d523425f2f98498f17f10bfc5",
+  "source": "/Users/dcirimel/pwnd2/maude-hcs-empirical/results/isolated_channel_confidentiality_experiments/ObfsConfidentiality+6c39e592b2de4d88b2e5b2b2a6efa8e1",
+  "assets": {
+    "testbed/src/static/irc_input/conf_obfsconfidentiality_irc_casualchat.json": "3ddf150ede9b9167666cdabd92a67d40078d03fd3eaa1512b0392e4ef71fc4f8",
+    "testbed/src/static/tgen_profiles/irc/conf_obfsconfidentiality_irc_7.json": "27d42d620b979ceff022d841d9ed0ffe5f33ee3da8743652b497a39ced60d822",
+    "testbed/src/static/tgen_profiles/irc/conf_obfsconfidentiality_irc_9.json": "2731fde4b80dded7c9291c2f9bf5f05482cbb32cde2ea87498fccddcf7e61206",
+    "testbed/src/static/tgen_profiles/gorilla/conf_obfsconfidentiality_irc_12.json": "34c46376366567b78d9f096833a3e6774cdf8c1c079c496b1f8624815a232077",
+    "testbed/src/static/tgen_profiles/gorilla/conf_obfsconfidentiality_irc_4.json": "3baec6044423985b5be0e1364afa402401dd28b4e544b53104aa1b455cabeaa3",
+    "testbed/src/static/tgen_profiles/gorilla/conf_obfsconfidentiality_irc_7.json": "27d42d620b979ceff022d841d9ed0ffe5f33ee3da8743652b497a39ced60d822",
+    "testbed/src/static/tgen_profiles/ftp/conf_obfsconfidentiality_fast.json": "133693af659f55064ec4e1f60b12cd9001e97fbc2c77b3fc3fe7170e9ecb66ad",
+    "testbed/src/static/tgen_profiles/ftp/conf_obfsconfidentiality_medium.json": "fe140387ffb775d068013396fea7048a1e0656affc86419d5e49ebd39bdb5d1d",
+    "testbed/src/static/tgen_profiles/ftp/conf_obfsconfidentiality_slow.json": "fc178d8c9140c263e61f8a7af0de053439b8f69abc1e217af61cfc9489fb1a89",
+    "testbed/src/static/tc_profiles/conf_obfsconfidentiality_none.yaml": "115d8d5a9359e22f7e51fe297545e6f177b62aeee7109d52e594838cd966d9b3",
+    "testbed/src/static/tc_profiles/conf_obfsconfidentiality_excellent.yaml": "a320f6c31da069825a6a1f48a400796e0d8a76270adf13f7fc0b81726881ec4a",
+    "testbed/src/static/tc_profiles/conf_obfsconfidentiality_good.yaml": "f25f838a6d0d2c38502cf760f14d89f9d99a0b2167a548c6e89c8324baae782e"
+  }
+}
