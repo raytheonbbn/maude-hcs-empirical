@@ -1,0 +1,2149 @@
+{
+  "spec": {
+    "name": "SingleTgenMinioConfidentiality",
+    "yaml_chunk": "single_tgens/minio",
+    "control_seed": 105,
+    "test_seed": 106,
+    "window_sizes": [
+      600
+    ],
+    "n_samples": 256,
+    "method": "p-value",
+    "alpha": 0.05,
+    "delta": 0.05,
+    "feats": [
+      "dnsQueryRate",
+      "dnsQuerySize",
+      "dnsRespSize",
+      "tcpUpRate",
+      "tcpDownRate",
+      "tcpUpToDownRate",
+      "tcpOutPktRate",
+      "tcpInPktRate",
+      "tcpOutToInPktRate",
+      "tcpPktSizeStdDev",
+      "tcpPktSize",
+      "tcpPktInterarrival",
+      "tcpDirectionChange",
+      "tcpActiveFlow",
+      "tcpNewCnx"
+    ],
+    "vantages": [
+      "ixpN",
+      "srvN",
+      "minN",
+      "masN",
+      "dnsN",
+      "cl[0]",
+      "cl[1]",
+      "cl[2]",
+      "cl[3]",
+      "cl[4]"
+    ],
+    "vantage_networks": {
+      "ixpN": null,
+      "srvN": "server_net",
+      "minN": "minio_net",
+      "masN": "mastodon_net",
+      "dnsN": "dns_net",
+      "cl[1]": "client_net_mastodon",
+      "cl[2]": "client_net_obfs",
+      "cl[3]": "client_net_iodine",
+      "cl[4]": "client_net_sky",
+      "cl[5]": "client_net_racetunnel"
+    },
+    "source_inputs": {
+      "/Users/dcirimel/pwnd2/maude-hcs/tests/contexts/confidentiality/yaml_chunks/single_tgens/minio.yaml": "647006e9ffccc894a30114414442f7ea707eee8dab7801c6dd3486263ad734bc",
+      "/Users/dcirimel/pwnd2/maude-hcs/tests/contexts/confidentiality/yaml_chunks/only_skyhook.yaml": "8507bf52b222c64ca52984a77f1972e7cfb8f5a0db48e9bd9d16f601064d4fd9"
+    },
+    "baseline_experiment": "IodineConfidentiality",
+    "preparation_overrides": {
+      "max_start_delay": 120
+    },
+    "yaml": "/src/confidentiality-single-tgens/SingleTgenMinioConfidentiality/experiment.yaml",
+    "yaml_sha256": "020ebb5166922902d5f5d652784d524dbe2ba99f2e85f4669be8cf6aaf810c63",
+    "source": "/Users/dcirimel/pwnd2/maude-hcs-empirical/results/isolated_channel_confidentiality_experiments/IodineConfidentiality+4b118321348e4f31a21e82997485741f",
+    "assets": {
+      "testbed/src/static/irc_input/conf_singletgenminioconfidentiality_irc_casualchat.json": "3ddf150ede9b9167666cdabd92a67d40078d03fd3eaa1512b0392e4ef71fc4f8",
+      "testbed/src/static/tgen_profiles/minio/conf_singletgenminioconfidentiality_slow.json": "a79d5844d09ac0cb51f7e0be610c1131d9c8545580da56b068ef036d6da26c4c",
+      "testbed/src/static/tc_profiles/conf_singletgenminioconfidentiality_none.yaml": "115d8d5a9359e22f7e51fe297545e6f177b62aeee7109d52e594838cd966d9b3",
+      "testbed/src/static/tc_profiles/conf_singletgenminioconfidentiality_excellent.yaml": "a320f6c31da069825a6a1f48a400796e0d8a76270adf13f7fc0b81726881ec4a",
+      "testbed/src/static/tc_profiles/conf_singletgenminioconfidentiality_good.yaml": "f25f838a6d0d2c38502cf760f14d89f9d99a0b2167a548c6e89c8324baae782e",
+      "testbed/src/static/skyhook_actions/conf_singletgenminioconfidentiality_skyhook_client_scenario_1.json": "f43fd499ae50940c5e4b42e610de074cfd904df156196dbccdeebbb2c262b342",
+      "testbed/src/static/skyhook_actions/conf_singletgenminioconfidentiality_skyhook_server_scenario_1.json": "099e142c687b102b976d5a1973a8cecbccd502b320d381de9dfeac9eb01cb3a1"
+    },
+    "model_adaptations": {
+      "testbed/src/static/skyhook_actions/conf_singletgenminioconfidentiality_skyhook_client_scenario_1.json": {
+        "source": "/Users/dcirimel/pwnd2/maude-hcs-empirical/results/isolated_channel_confidentiality_experiments/IodineConfidentiality+4b118321348e4f31a21e82997485741f/test/skyhook_action_models/skyhook_client_scenario_1.json",
+        "source_sha256": "cff2bd7ed8d2fc0a2b4ede75e0f1631b2cecb9c52d5eb47f9a197d5aff801596",
+        "changes": "wait_remove=true (retain delays in timeline timestamps)"
+      },
+      "testbed/src/static/skyhook_actions/conf_singletgenminioconfidentiality_skyhook_server_scenario_1.json": {
+        "source": "/Users/dcirimel/pwnd2/maude-hcs-empirical/results/isolated_channel_confidentiality_experiments/IodineConfidentiality+4b118321348e4f31a21e82997485741f/test/skyhook_action_models/skyhook_server_scenario_1.json",
+        "source_sha256": "1e5bac2363a082078e2ab4de5648b015f24db686ce918aa5ea362b4ec7969106",
+        "changes": "wait_remove=true (retain delays in timeline timestamps)"
+      }
+    }
+  },
+  "control": {
+    "run": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-control",
+    "start_flags": "-T",
+    "configuration": {
+      "env": "singletgenminioconfidentiality",
+      "conversation_duration": 600,
+      "max_start_delay": 120,
+      "one_way_availability": 30,
+      "analysis_window_size": 600,
+      "network": {
+        "minio_net": {
+          "network": "minio",
+          "params": {
+            "upstream": {
+              "latency": 0,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            },
+            "downstream": {
+              "latency": 0,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            }
+          }
+        },
+        "server_net": {
+          "network": "server",
+          "params": {
+            "upstream": {
+              "latency": 10,
+              "loss_profile": "conf_singletgenminioconfidentiality_excellent"
+            },
+            "downstream": {
+              "latency": 10,
+              "loss_profile": "conf_singletgenminioconfidentiality_excellent"
+            }
+          }
+        },
+        "mastodon_net": {
+          "network": "mastodon",
+          "params": {
+            "upstream": {
+              "latency": 5,
+              "loss_profile": "conf_singletgenminioconfidentiality_good"
+            },
+            "downstream": {
+              "latency": 5,
+              "loss_profile": "conf_singletgenminioconfidentiality_good"
+            }
+          }
+        },
+        "dns_net": {
+          "network": "dns",
+          "params": {
+            "upstream": {
+              "latency": 20,
+              "loss_profile": "conf_singletgenminioconfidentiality_good"
+            },
+            "downstream": {
+              "latency": 20,
+              "loss_profile": "conf_singletgenminioconfidentiality_good"
+            }
+          }
+        },
+        "client_net_mastodon": {
+          "nat": false,
+          "network": "client",
+          "params": {
+            "upstream": {
+              "latency": 20,
+              "loss_profile": "conf_singletgenminioconfidentiality_excellent"
+            },
+            "downstream": {
+              "latency": 20,
+              "loss_profile": "conf_singletgenminioconfidentiality_excellent"
+            }
+          }
+        },
+        "client_net_obfs": {
+          "nat": false,
+          "network": "client",
+          "params": {
+            "upstream": {
+              "latency": 15,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            },
+            "downstream": {
+              "latency": 15,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            }
+          }
+        },
+        "client_net_iodine": {
+          "nat": false,
+          "network": "client",
+          "params": {
+            "upstream": {
+              "latency": 10,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            },
+            "downstream": {
+              "latency": 10,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            }
+          }
+        },
+        "client_net_sky": {
+          "nat": false,
+          "network": "client",
+          "params": {
+            "upstream": {
+              "latency": 20,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            },
+            "downstream": {
+              "latency": 20,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            }
+          }
+        },
+        "client_net_racetunnel": {
+          "nat": false,
+          "network": "client",
+          "params": {
+            "upstream": {
+              "latency": 30,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            },
+            "downstream": {
+              "latency": 30,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            }
+          }
+        }
+      },
+      "nodes": {
+        "node_type_sky": {
+          "channel_config": [
+            {
+              "direction": "bidirectional",
+              "channel": "skyhook",
+              "vars": {
+                "client": {
+                  "user_model": "conf_singletgenminioconfidentiality_skyhook_client_scenario_1.json"
+                },
+                "server": {
+                  "user_model": "conf_singletgenminioconfidentiality_skyhook_server_scenario_1.json"
+                }
+              }
+            }
+          ],
+          "client_per_network": {
+            "client_net_sky": {
+              "quantity": 2,
+              "profiles": {
+                "conf_singletgenminioconfidentiality_irc_casualchat": 1
+              }
+            }
+          }
+        }
+      },
+      "tgen": {
+        "tgen_type_minio": {
+          "tgen_per_network": {
+            "client_net_sky": {
+              "quantity": 1,
+              "profiles": {
+                "conf_singletgenminioconfidentiality_slow": 1.0
+              }
+            }
+          }
+        }
+      },
+      "confidentiality": true
+    },
+    "trials": [
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-control/trial-001/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_050042.zip",
+        "start_epoch": 1792817410.1338658,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_050042/pcaps/20261024_045008_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_050042/pcaps/20261024_045008_router_server_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_050042/pcaps/20261024_045008_router_minio_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_050042/pcaps/20261024_045008_router_mastodon_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_050042/pcaps/20261024_045008_router_dns_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_050042/pcaps/20261024_045008_router_client_net_mastodon_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_050042/pcaps/20261024_045008_router_client_net_obfs_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_050042/pcaps/20261024_045008_router_client_net_iodine_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_050042/pcaps/20261024_045008_router_client_net_sky_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 1
+      },
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-control/trial-002/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_050027.zip",
+        "start_epoch": 1792817396.3045933,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_050027/pcaps/20261024_044954_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_050027/pcaps/20261024_044954_router_server_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_050027/pcaps/20261024_044954_router_minio_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_050027/pcaps/20261024_044954_router_mastodon_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_050027/pcaps/20261024_044954_router_dns_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_050027/pcaps/20261024_044954_router_client_net_mastodon_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_050027/pcaps/20261024_044954_router_client_net_obfs_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_050027/pcaps/20261024_044954_router_client_net_iodine_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_050027/pcaps/20261024_044954_router_client_net_sky_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 2
+      },
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-control/trial-003/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_051506.zip",
+        "start_epoch": 1792818273.3198233,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_051506/pcaps/20261024_050431_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_051506/pcaps/20261024_050431_router_server_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_051506/pcaps/20261024_050431_router_minio_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_051506/pcaps/20261024_050431_router_mastodon_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_051506/pcaps/20261024_050431_router_dns_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_051506/pcaps/20261024_050431_router_client_net_mastodon_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_051506/pcaps/20261024_050431_router_client_net_obfs_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_051506/pcaps/20261024_050431_router_client_net_iodine_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_051506/pcaps/20261024_050431_router_client_net_sky_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 3
+      },
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-control/trial-004/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_051433.zip",
+        "start_epoch": 1792818242.467488,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_051433/pcaps/20261024_050400_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_051433/pcaps/20261024_050400_router_server_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_051433/pcaps/20261024_050400_router_minio_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_051433/pcaps/20261024_050400_router_mastodon_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_051433/pcaps/20261024_050400_router_dns_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_051433/pcaps/20261024_050400_router_client_net_mastodon_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_051433/pcaps/20261024_050400_router_client_net_obfs_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_051433/pcaps/20261024_050400_router_client_net_iodine_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_051433/pcaps/20261024_050400_router_client_net_sky_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 4
+      },
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-control/trial-005/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_052930.zip",
+        "start_epoch": 1792819137.5660968,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_052930/pcaps/20261024_051855_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_052930/pcaps/20261024_051855_router_server_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_052930/pcaps/20261024_051855_router_minio_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_052930/pcaps/20261024_051855_router_mastodon_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_052930/pcaps/20261024_051855_router_dns_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_052930/pcaps/20261024_051855_router_client_net_mastodon_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_052930/pcaps/20261024_051855_router_client_net_obfs_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_052930/pcaps/20261024_051855_router_client_net_iodine_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_052930/pcaps/20261024_051855_router_client_net_sky_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 5
+      },
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-control/trial-006/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_052837.zip",
+        "start_epoch": 1792819087.1664,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_052837/pcaps/20261024_051805_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_052837/pcaps/20261024_051805_router_server_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_052837/pcaps/20261024_051805_router_minio_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_052837/pcaps/20261024_051805_router_mastodon_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_052837/pcaps/20261024_051805_router_dns_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_052837/pcaps/20261024_051805_router_client_net_mastodon_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_052837/pcaps/20261024_051805_router_client_net_obfs_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_052837/pcaps/20261024_051805_router_client_net_iodine_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_052837/pcaps/20261024_051805_router_client_net_sky_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 6
+      },
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-control/trial-007/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_054351.zip",
+        "start_epoch": 1792819998.6395907,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_054351/pcaps/20261024_053316_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_054351/pcaps/20261024_053316_router_server_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_054351/pcaps/20261024_053316_router_minio_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_054351/pcaps/20261024_053316_router_mastodon_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_054351/pcaps/20261024_053316_router_dns_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_054351/pcaps/20261024_053316_router_client_net_mastodon_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_054351/pcaps/20261024_053316_router_client_net_obfs_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_054351/pcaps/20261024_053316_router_client_net_iodine_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_054351/pcaps/20261024_053316_router_client_net_sky_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 7
+      },
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-control/trial-008/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_054239.zip",
+        "start_epoch": 1792819928.5512946,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_054239/pcaps/20261024_053206_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_054239/pcaps/20261024_053206_router_server_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_054239/pcaps/20261024_053206_router_minio_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_054239/pcaps/20261024_053206_router_mastodon_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_054239/pcaps/20261024_053206_router_dns_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_054239/pcaps/20261024_053206_router_client_net_mastodon_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_054239/pcaps/20261024_053206_router_client_net_obfs_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_054239/pcaps/20261024_053206_router_client_net_iodine_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_054239/pcaps/20261024_053206_router_client_net_sky_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 8
+      },
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-control/trial-009/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_055817.zip",
+        "start_epoch": 1792820864.61796,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_055817/pcaps/20261024_054742_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_055817/pcaps/20261024_054742_router_server_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_055817/pcaps/20261024_054742_router_minio_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_055817/pcaps/20261024_054742_router_mastodon_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_055817/pcaps/20261024_054742_router_dns_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_055817/pcaps/20261024_054742_router_client_net_mastodon_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_055817/pcaps/20261024_054742_router_client_net_obfs_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_055817/pcaps/20261024_054742_router_client_net_iodine_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_055817/pcaps/20261024_054742_router_client_net_sky_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 9
+      },
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-control/trial-010/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_055642.zip",
+        "start_epoch": 1792820771.305987,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_055642/pcaps/20261024_054609_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_055642/pcaps/20261024_054609_router_server_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_055642/pcaps/20261024_054609_router_minio_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_055642/pcaps/20261024_054609_router_mastodon_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_055642/pcaps/20261024_054609_router_dns_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_055642/pcaps/20261024_054609_router_client_net_mastodon_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_055642/pcaps/20261024_054609_router_client_net_obfs_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_055642/pcaps/20261024_054609_router_client_net_iodine_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_055642/pcaps/20261024_054609_router_client_net_sky_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 10
+      }
+    ]
+  },
+  "test": {
+    "run": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-test",
+    "start_flags": "",
+    "configuration": {
+      "env": "singletgenminioconfidentiality",
+      "conversation_duration": 600,
+      "max_start_delay": 120,
+      "one_way_availability": 30,
+      "analysis_window_size": 600,
+      "network": {
+        "minio_net": {
+          "network": "minio",
+          "params": {
+            "upstream": {
+              "latency": 0,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            },
+            "downstream": {
+              "latency": 0,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            }
+          }
+        },
+        "server_net": {
+          "network": "server",
+          "params": {
+            "upstream": {
+              "latency": 10,
+              "loss_profile": "conf_singletgenminioconfidentiality_excellent"
+            },
+            "downstream": {
+              "latency": 10,
+              "loss_profile": "conf_singletgenminioconfidentiality_excellent"
+            }
+          }
+        },
+        "mastodon_net": {
+          "network": "mastodon",
+          "params": {
+            "upstream": {
+              "latency": 5,
+              "loss_profile": "conf_singletgenminioconfidentiality_good"
+            },
+            "downstream": {
+              "latency": 5,
+              "loss_profile": "conf_singletgenminioconfidentiality_good"
+            }
+          }
+        },
+        "dns_net": {
+          "network": "dns",
+          "params": {
+            "upstream": {
+              "latency": 20,
+              "loss_profile": "conf_singletgenminioconfidentiality_good"
+            },
+            "downstream": {
+              "latency": 20,
+              "loss_profile": "conf_singletgenminioconfidentiality_good"
+            }
+          }
+        },
+        "client_net_mastodon": {
+          "nat": false,
+          "network": "client",
+          "params": {
+            "upstream": {
+              "latency": 20,
+              "loss_profile": "conf_singletgenminioconfidentiality_excellent"
+            },
+            "downstream": {
+              "latency": 20,
+              "loss_profile": "conf_singletgenminioconfidentiality_excellent"
+            }
+          }
+        },
+        "client_net_obfs": {
+          "nat": false,
+          "network": "client",
+          "params": {
+            "upstream": {
+              "latency": 15,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            },
+            "downstream": {
+              "latency": 15,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            }
+          }
+        },
+        "client_net_iodine": {
+          "nat": false,
+          "network": "client",
+          "params": {
+            "upstream": {
+              "latency": 10,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            },
+            "downstream": {
+              "latency": 10,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            }
+          }
+        },
+        "client_net_sky": {
+          "nat": false,
+          "network": "client",
+          "params": {
+            "upstream": {
+              "latency": 20,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            },
+            "downstream": {
+              "latency": 20,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            }
+          }
+        },
+        "client_net_racetunnel": {
+          "nat": false,
+          "network": "client",
+          "params": {
+            "upstream": {
+              "latency": 30,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            },
+            "downstream": {
+              "latency": 30,
+              "loss_profile": "conf_singletgenminioconfidentiality_none"
+            }
+          }
+        }
+      },
+      "nodes": {
+        "node_type_sky": {
+          "channel_config": [
+            {
+              "direction": "bidirectional",
+              "channel": "skyhook",
+              "vars": {
+                "client": {
+                  "user_model": "conf_singletgenminioconfidentiality_skyhook_client_scenario_1.json"
+                },
+                "server": {
+                  "user_model": "conf_singletgenminioconfidentiality_skyhook_server_scenario_1.json"
+                }
+              }
+            }
+          ],
+          "client_per_network": {
+            "client_net_sky": {
+              "quantity": 2,
+              "profiles": {
+                "conf_singletgenminioconfidentiality_irc_casualchat": 1
+              }
+            }
+          }
+        }
+      },
+      "tgen": {
+        "tgen_type_minio": {
+          "tgen_per_network": {
+            "client_net_sky": {
+              "quantity": 1,
+              "profiles": {
+                "conf_singletgenminioconfidentiality_slow": 1.0
+              }
+            }
+          }
+        }
+      },
+      "confidentiality": true
+    },
+    "trials": [
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-test/trial-001/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_062138.zip",
+        "start_epoch": 1792821781.9481578,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_062138/pcaps/20261024_060300_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_062138/pcaps/20261024_060300_router_server_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_062138/pcaps/20261024_060300_router_minio_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_062138/pcaps/20261024_060300_router_mastodon_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_062138/pcaps/20261024_060300_router_dns_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_062138/pcaps/20261024_060300_router_client_net_mastodon_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_062138/pcaps/20261024_060300_router_client_net_obfs_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_062138/pcaps/20261024_060300_router_client_net_iodine_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_062138/pcaps/20261024_060300_router_client_net_sky_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 1
+      },
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-test/trial-002/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_062126.zip",
+        "start_epoch": 1792821768.1923513,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_062126/pcaps/20261024_060246_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_062126/pcaps/20261024_060246_router_server_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_062126/pcaps/20261024_060246_router_minio_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_062126/pcaps/20261024_060246_router_mastodon_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_062126/pcaps/20261024_060246_router_dns_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_062126/pcaps/20261024_060246_router_client_net_mastodon_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_062126/pcaps/20261024_060246_router_client_net_obfs_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_062126/pcaps/20261024_060246_router_client_net_iodine_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_062126/pcaps/20261024_060246_router_client_net_sky_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 2
+      },
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-test/trial-003/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_064332.zip",
+        "start_epoch": 1792823131.4702482,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_064332/pcaps/20261024_062529_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_064332/pcaps/20261024_062529_router_server_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_064332/pcaps/20261024_062529_router_minio_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_064332/pcaps/20261024_062529_router_mastodon_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_064332/pcaps/20261024_062529_router_dns_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_064332/pcaps/20261024_062529_router_client_net_mastodon_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_064332/pcaps/20261024_062529_router_client_net_obfs_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_064332/pcaps/20261024_062529_router_client_net_iodine_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_064332/pcaps/20261024_062529_router_client_net_sky_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 3
+      },
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-test/trial-004/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_064232.zip",
+        "start_epoch": 1792823101.5145738,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_064232/pcaps/20261024_062459_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_064232/pcaps/20261024_062459_router_server_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_064232/pcaps/20261024_062459_router_minio_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_064232/pcaps/20261024_062459_router_mastodon_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_064232/pcaps/20261024_062459_router_dns_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_064232/pcaps/20261024_062459_router_client_net_mastodon_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_064232/pcaps/20261024_062459_router_client_net_obfs_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_064232/pcaps/20261024_062459_router_client_net_iodine_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_064232/pcaps/20261024_062459_router_client_net_sky_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 4
+      },
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-test/trial-005/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_070437.zip",
+        "start_epoch": 1792824446.9517992,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_070437/pcaps/20261024_064725_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_070437/pcaps/20261024_064725_router_server_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_070437/pcaps/20261024_064725_router_minio_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_070437/pcaps/20261024_064725_router_mastodon_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_070437/pcaps/20261024_064725_router_dns_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_070437/pcaps/20261024_064725_router_client_net_mastodon_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_070437/pcaps/20261024_064725_router_client_net_obfs_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_070437/pcaps/20261024_064725_router_client_net_iodine_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_070437/pcaps/20261024_064725_router_client_net_sky_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 5
+      },
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-test/trial-006/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_070432.zip",
+        "start_epoch": 1792824370.1902852,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_070432/pcaps/20261024_064608_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_070432/pcaps/20261024_064608_router_server_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_070432/pcaps/20261024_064608_router_minio_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_070432/pcaps/20261024_064608_router_mastodon_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_070432/pcaps/20261024_064608_router_dns_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_070432/pcaps/20261024_064608_router_client_net_mastodon_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_070432/pcaps/20261024_064608_router_client_net_obfs_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_070432/pcaps/20261024_064608_router_client_net_iodine_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_070432/pcaps/20261024_064608_router_client_net_sky_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 6
+      },
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-test/trial-007/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_072734.zip",
+        "start_epoch": 1792825709.2933574,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_072734/pcaps/20261024_070827_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_072734/pcaps/20261024_070827_router_server_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_072734/pcaps/20261024_070827_router_minio_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_072734/pcaps/20261024_070827_router_mastodon_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_072734/pcaps/20261024_070827_router_dns_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_072734/pcaps/20261024_070827_router_client_net_mastodon_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_072734/pcaps/20261024_070827_router_client_net_obfs_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_072734/pcaps/20261024_070827_router_client_net_iodine_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_072734/pcaps/20261024_070827_router_client_net_sky_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 7
+      },
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-test/trial-008/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_072632.zip",
+        "start_epoch": 1792825689.9962265,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_072632/pcaps/20261024_070808_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_072632/pcaps/20261024_070808_router_server_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_072632/pcaps/20261024_070808_router_minio_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_072632/pcaps/20261024_070808_router_mastodon_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_072632/pcaps/20261024_070808_router_dns_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_072632/pcaps/20261024_070808_router_client_net_mastodon_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_072632/pcaps/20261024_070808_router_client_net_obfs_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_072632/pcaps/20261024_070808_router_client_net_iodine_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_072632/pcaps/20261024_070808_router_client_net_sky_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 8
+      },
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-test/trial-009/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_075034.zip",
+        "start_epoch": 1792827087.9961028,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_075034/pcaps/20261024_073126_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_075034/pcaps/20261024_073126_router_server_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_075034/pcaps/20261024_073126_router_minio_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_075034/pcaps/20261024_073126_router_mastodon_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_075034/pcaps/20261024_073126_router_dns_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_075034/pcaps/20261024_073126_router_client_net_mastodon_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_075034/pcaps/20261024_073126_router_client_net_obfs_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_075034/pcaps/20261024_073126_router_client_net_iodine_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_075034/pcaps/20261024_073126_router_client_net_sky_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 9
+      },
+      {
+        "archive": "/Users/dcirimel/pwnd2/maude-hcs-exp/orchestrator-results/confidentiality-single-tgens-10-trials/SingleTgenMinioConfidentiality/SingleTgenMinioConfidentiality-test/trial-010/collection/testbed/src/collection/singletgenminioconfidentiality_20261024_074734.zip",
+        "start_epoch": 1792827009.3317428,
+        "timing_source": "capture_metadata",
+        "observations": {
+          "ixpN": {
+            "network": null,
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_074734/pcaps/20261024_073007_ixp-router_eth0_trimmed.pcap"
+            ],
+            "capture_network": "router_net"
+          },
+          "srvN": {
+            "network": "server_net",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_074734/pcaps/20261024_073007_router_server_net_eth1_trimmed.pcap"
+            ],
+            "capture_network": "server_net"
+          },
+          "minN": {
+            "network": "minio_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_074734/pcaps/20261024_073007_router_minio_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "minio_net"
+          },
+          "masN": {
+            "network": "mastodon_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_074734/pcaps/20261024_073007_router_mastodon_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "mastodon_net"
+          },
+          "dnsN": {
+            "network": "dns_net",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_074734/pcaps/20261024_073007_router_dns_net_eth0_trimmed.pcap"
+            ],
+            "capture_network": "dns_net"
+          },
+          "cl[0]": {
+            "network": null,
+            "absent_network": true
+          },
+          "cl[1]": {
+            "network": "client_net_mastodon",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_074734/pcaps/20261024_073007_router_client_net_mastodon_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_mastodon"
+          },
+          "cl[2]": {
+            "network": "client_net_obfs",
+            "interface": "eth1",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_074734/pcaps/20261024_073007_router_client_net_obfs_eth1_trimmed.pcap"
+            ],
+            "capture_network": "client_net_obfs"
+          },
+          "cl[3]": {
+            "network": "client_net_iodine",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_074734/pcaps/20261024_073007_router_client_net_iodine_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_iodine"
+          },
+          "cl[4]": {
+            "network": "client_net_sky",
+            "interface": "eth0",
+            "captures": [
+              "singletgenminioconfidentiality_20261024_074734/pcaps/20261024_073007_router_client_net_sky_eth0_trimmed.pcap"
+            ],
+            "capture_network": "client_net_sky"
+          }
+        },
+        "bins": {},
+        "trial": 10
+      }
+    ]
+  },
+  "capture_notes": [],
+  "sample_unit": "one cumulative network-vantage measurement per trial",
+  "tcp_size": "captured frame.len (wire frame bytes)",
+  "dns_size": "UDP payload bytes; TCP DNS size is unavailable in this extractor",
+  "limitations": [
+    "Physical packetization, headers, retransmissions and timing differ from SMC abstractions.",
+    "New TCP connections count distinct observed SYN-without-ACK streams.",
+    "Legacy capture filenames provide second-resolution UTC start times, not readiness barriers."
+  ]
+}
