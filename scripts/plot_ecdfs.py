@@ -7,9 +7,6 @@ import json
 
 THIS_PATH = Path(__file__).resolve()
 
-# wtfffff ok cl[5] is sometimes present, sometimes not. it HAS to be present for anything in webtunnel network.
-# So, depending on the run, I need to know which cl to isolate and convert.
-
 NAME_MAP = {
     "single_tgen_mastodon": "SingleTgenMastodonConfidentiality",
     "single_tgen_dns": "SingleTgenDnsConfidentiality",
@@ -105,18 +102,13 @@ if __name__ == "__main__":
     for exp in smc_exps:
 
         testbed_exp = NAME_MAP[exp]
-
-        # Remove all client network vantage cases besides the one specified
-        def filter_cl(cl, lst):
-            return list(filter(lambda case: case["vantage"] == cl, lst))
-
         smc_cases_lst = json.loads((smc_results_path / exp / "cases.json").read_text())
         testbed_cases_lst = json.loads((testbed_results_path / testbed_exp / "analysis" / "cases.json").read_text())
 
         for case in testbed_cases_lst:
 
             # cl[0] doesn't actually exist, so these should always be zero
-            if case["vantage"] in ["cl[0]"]:
+            if case["vantage"] == "cl[0]":
                 assert all(map(lambda x: x == 0, case["test_samples"]))
                 assert all(map(lambda x: x == 0, case["control_samples"]))
 
@@ -129,6 +121,13 @@ if __name__ == "__main__":
         for case in smc_cases_lst:
             if case["vantage"] in ["cl[2]", "cl[3]", "cl[4]", "cl[5]"]:
                 assert all(map(lambda x: x == 0, case["samples"]))
+
+        # Remove all client network vantage cases besides the one specified
+        def filter_cl(cl, lst):
+            return [
+                case for case in lst
+                if (not case["vantage"].startswith("cl[")) or (case["vantage"] == cl)
+            ]
 
         testbed_cases_lst = filter_cl(VANTAGE_MAP[testbed_exp], testbed_cases_lst)
         smc_cases_lst = filter_cl("cl[1]", smc_cases_lst)
@@ -151,6 +150,10 @@ if __name__ == "__main__":
 
         for key in keys:
             smc_case, testbed_case = smc_cases[key], testbed_cases[key]
+
+            # skip when case is all zero on both sides
+            if all(x == 0 for x in smc_case["samples"]) and all(x == 0 for x in testbed_case["samples"]):
+                continue
 
             plot_ecdfs(
                 smc_case["samples"],
