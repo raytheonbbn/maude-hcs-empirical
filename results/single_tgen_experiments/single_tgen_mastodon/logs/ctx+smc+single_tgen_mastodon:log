@@ -3,8 +3,8 @@ maude-hcs scheck \
     --nsims 256-256 \
     --seed 0 \
     --jobs 0 \
-    --dump /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmp08u_gpox/single_tgen_mastodon+cfff4693a77140a6bfcc2f47f16129e2/dumps/dump \
-    --test /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmp08u_gpox/single_tgen_mastodon+cfff4693a77140a6bfcc2f47f16129e2/test-run.maude \
-    --query /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmp08u_gpox/single_tgen_mastodon+cfff4693a77140a6bfcc2f47f16129e2/test.quatex \
+    --dump /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmpl0jk6xde/single_tgen_mastodon+fb4f71c5c5fc4efeaee4bd865353a42f/dumps/dump \
+    --test /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmpl0jk6xde/single_tgen_mastodon+fb4f71c5c5fc4efeaee4bd865353a42f/test-run.maude \
+    --query /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmpl0jk6xde/single_tgen_mastodon+fb4f71c5c5fc4efeaee4bd865353a42f/test.quatex \
     --initial initConfig \
     --format json

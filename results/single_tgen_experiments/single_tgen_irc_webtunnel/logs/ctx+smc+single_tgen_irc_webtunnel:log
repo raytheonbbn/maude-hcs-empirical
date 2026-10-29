@@ -3,8 +3,8 @@ maude-hcs scheck \
     --nsims 256-256 \
     --seed 0 \
     --jobs 0 \
-    --dump /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmp08u_gpox/single_tgen_irc_webtunnel+d5659a8716334707b97192658c0d1728/dumps/dump \
-    --test /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmp08u_gpox/single_tgen_irc_webtunnel+d5659a8716334707b97192658c0d1728/test-run.maude \
-    --query /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmp08u_gpox/single_tgen_irc_webtunnel+d5659a8716334707b97192658c0d1728/test.quatex \
+    --dump /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmpl0jk6xde/single_tgen_irc_webtunnel+d57c1a192d50490b933596ba581c0e82/dumps/dump \
+    --test /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmpl0jk6xde/single_tgen_irc_webtunnel+d57c1a192d50490b933596ba581c0e82/test-run.maude \
+    --query /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmpl0jk6xde/single_tgen_irc_webtunnel+d57c1a192d50490b933596ba581c0e82/test.quatex \
     --initial initConfig \
     --format json

@@ -771,7 +771,4 @@ mod TEST is
   op allClientsAddr : -> AddrList .
   eq allClientsAddr = nil .
 endm
-eof
---- set print attribute on .
---- rew initConfig .
---- q
+set print attribute on .

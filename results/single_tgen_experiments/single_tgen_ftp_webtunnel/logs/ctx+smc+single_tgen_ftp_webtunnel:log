@@ -3,8 +3,8 @@ maude-hcs scheck \
     --nsims 256-256 \
     --seed 0 \
     --jobs 0 \
-    --dump /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmp08u_gpox/single_tgen_ftp_webtunnel+55fa5e511ef14d6eb1b41503230e32b9/dumps/dump \
-    --test /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmp08u_gpox/single_tgen_ftp_webtunnel+55fa5e511ef14d6eb1b41503230e32b9/test-run.maude \
-    --query /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmp08u_gpox/single_tgen_ftp_webtunnel+55fa5e511ef14d6eb1b41503230e32b9/test.quatex \
+    --dump /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmpl0jk6xde/single_tgen_ftp_webtunnel+c8865ee69aa042498d723c4316a185ff/dumps/dump \
+    --test /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmpl0jk6xde/single_tgen_ftp_webtunnel+c8865ee69aa042498d723c4316a185ff/test-run.maude \
+    --query /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmpl0jk6xde/single_tgen_ftp_webtunnel+c8865ee69aa042498d723c4316a185ff/test.quatex \
     --initial initConfig \
     --format json

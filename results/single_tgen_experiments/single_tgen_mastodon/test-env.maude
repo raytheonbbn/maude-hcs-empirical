@@ -6,3 +6,5 @@ mod TEST-ENV is
   inc TEST .
   inc TEST-UTILS .
 endm
+
+set print attribute on .

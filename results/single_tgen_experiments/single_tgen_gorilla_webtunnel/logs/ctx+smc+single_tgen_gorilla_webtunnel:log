@@ -3,8 +3,8 @@ maude-hcs scheck \
     --nsims 256-256 \
     --seed 0 \
     --jobs 0 \
-    --dump /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmp08u_gpox/single_tgen_gorilla_webtunnel+8ac2a79cedd9410fb3b4c3b5106d8c63/dumps/dump \
-    --test /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmp08u_gpox/single_tgen_gorilla_webtunnel+8ac2a79cedd9410fb3b4c3b5106d8c63/test-run.maude \
-    --query /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmp08u_gpox/single_tgen_gorilla_webtunnel+8ac2a79cedd9410fb3b4c3b5106d8c63/test.quatex \
+    --dump /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmpl0jk6xde/single_tgen_gorilla_webtunnel+2d9e8cef4c484006ad8c245dd3df9f18/dumps/dump \
+    --test /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmpl0jk6xde/single_tgen_gorilla_webtunnel+2d9e8cef4c484006ad8c245dd3df9f18/test-run.maude \
+    --query /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmpl0jk6xde/single_tgen_gorilla_webtunnel+2d9e8cef4c484006ad8c245dd3df9f18/test.quatex \
     --initial initConfig \
     --format json

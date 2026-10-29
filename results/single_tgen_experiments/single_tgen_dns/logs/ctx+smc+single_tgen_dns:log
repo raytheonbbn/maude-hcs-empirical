@@ -3,8 +3,8 @@ maude-hcs scheck \
     --nsims 256-256 \
     --seed 0 \
     --jobs 0 \
-    --dump /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmp08u_gpox/single_tgen_dns+e4dff207c54b46d19248f1787278c9b3/dumps/dump \
-    --test /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmp08u_gpox/single_tgen_dns+e4dff207c54b46d19248f1787278c9b3/test-run.maude \
-    --query /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmp08u_gpox/single_tgen_dns+e4dff207c54b46d19248f1787278c9b3/test.quatex \
+    --dump /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmpl0jk6xde/single_tgen_dns+293f2690d8c141d191074e0f5bef1b08/dumps/dump \
+    --test /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmpl0jk6xde/single_tgen_dns+293f2690d8c141d191074e0f5bef1b08/test-run.maude \
+    --query /private/var/folders/cd/mfz_hcd5501381s9gwnn8zpw0000gq/T/tmpl0jk6xde/single_tgen_dns+293f2690d8c141d191074e0f5bef1b08/test.quatex \
     --initial initConfig \
     --format json
