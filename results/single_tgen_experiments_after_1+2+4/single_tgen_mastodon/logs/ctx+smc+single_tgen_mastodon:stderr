@@ -1,0 +1,50 @@
+[31mWarning: [0m"smc_cp3-refactored.maude", line 159 (mod SMC_CP3): multiple distinct parses for statement
+eq sumDiff (F F' FL) = (F' - F) + sumDiff (F' FL) .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 164 (mod SMC_CP3): multiple distinct parses for statement
+eq avgDiff (FL) = if (len (FL) == 1) then 0.0 else sumDiff (FL) / float (len (FL) - 1) fi .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 168 (mod SMC_CP3): multiple distinct parses for statement
+eq sumSquaredDiff (F FL, F') = (F - F') * (F - F') + sumSquaredDiff (FL, F') .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 258 (mod SMC_CP3): multiple distinct parses for statement
+eq compLatency (Tsent, Trcvd) = Trcvd - Tsent .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 389 (mod SMC_CP3): multiple distinct parses for statement
+ceq getGoodput (< ADDR : IrcMonitor | msgRcvd: ircMTL, attrs >, Tstart, Tend) = collectGoodput (filterWindow (ircMTL, Tstart, Tend), Tstart, Tend) * 8.0 / (Tend - Tstart) if Tend > Tstart .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 519 (mod SMC_CP3): multiple distinct parses for statement
+eq normMED (NL, NL') = if max (lenMsgIdList (NL), lenMsgIdList (NL')) == 0 then 1.0 else 1.0 - (float (med (NL, NL')) / float (max (lenMsgIdList (NL), lenMsgIdList (NL')))) fi .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 648 (mod SMC_CP3): multiple distinct parses for statement
+eq getMTBF (< ADDR : IrcMonitor | msgSent: ircMTL, msgRcvd: ircMTL', attrs >, Tn, Tstart, Tend) = getMTBFAux (filterWindow (ircMTL, Tstart - Tn, Tend), dropBefore (ircMTL', Tstart - Tn), Tn, Tstart, Tend) .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 708 (mod SMC_CP3): multiple distinct parses for statement
+eq KsDistanceX (F FL, nil, I, J, invN, invN', D) = max2 (D, abs ((float (I) * invN) - 1.0)) .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 709 (mod SMC_CP3): multiple distinct parses for statement
+eq KsDistanceX (nil, F' FL', I, J, invN, invN', D) = max2 (D, abs (1.0 - (float (J) * invN'))) .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 711 (mod SMC_CP3): multiple distinct parses for statement
+ceq KsDistanceX (F FL, F' FL', I, J, invN, invN', D) = KsDistanceX (FL1, FL2, I + C1, J + C2, invN, invN', max2 (D, abs ((float (I + C1) * invN) - (float (J + C2) * invN')))) if F == F' /\ prefix (C1, FL1) := skipEqPrefix (F, F FL) /\ prefix (C2, FL2) := skipEqPrefix (F', F' FL') .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 717 (mod SMC_CP3): multiple distinct parses for statement
+ceq KsDistanceX (F FL, F' FL', I, J, invN, invN', D) = KsDistanceX (FL, F' FL', I + 1, J, invN, invN', max2 (D, abs ((float (I + 1) * invN) - (float (J) * invN')))) if F < F' .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 721 (mod SMC_CP3): multiple distinct parses for statement
+ceq KsDistanceX (F FL, F' FL', I, J, invN, invN', D) = KsDistanceX (F FL, FL', I, J + 1, invN, invN', max2 (D, abs ((float (I) * invN) - (float (J + 1) * invN')))) if F > F' .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 731 (mod SMC_CP3): multiple distinct parses for statement
+eq KsStatisticZ (FL, FL', K) = KsDistance (FL, FL') - K .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 828 (mod SMC_CP3): multiple distinct parses for statement
+eq compObsFeatureX (vp, dnsQueryRate, Fid, TOL, Tstart, Tend) = float (countDNSQuery (vp, Fid, TOL, Tstart, Tend)) / (Tend - Tstart) .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 842 (mod SMC_CP3): multiple distinct parses for statement
+eq compObsFeatureX (vp, tcpUpRate, Fid, TOL, Tstart, Tend) = float (sizeTCPUpload (vp, Fid, TOL, Tstart, Tend)) / (Tend - Tstart) .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 844 (mod SMC_CP3): multiple distinct parses for statement
+eq compObsFeatureX (vp, tcpDownRate, Fid, TOL, Tstart, Tend) = float (sizeTCPDownload (vp, Fid, TOL, Tstart, Tend)) / (Tend - Tstart) .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 852 (mod SMC_CP3): multiple distinct parses for statement
+eq compObsFeatureX (vp, tcpOutPktRate, Fid, TOL, Tstart, Tend) = float (countTCPOutPkt (vp, Fid, TOL, Tstart, Tend)) / (Tend - Tstart) .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 854 (mod SMC_CP3): multiple distinct parses for statement
+eq compObsFeatureX (vp, tcpInPktRate, Fid, TOL, Tstart, Tend) = float (countTCPInPkt (vp, Fid, TOL, Tstart, Tend)) / (Tend - Tstart) .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 883 (mod SMC_CP3): multiple distinct parses for statement
+eq compObsFeatureX (vp, dnsQueryRate, TOL, Tstart, Tend) = float (countDNSQuery (vp, TOL, Tstart, Tend)) / (Tend - Tstart) .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 897 (mod SMC_CP3): multiple distinct parses for statement
+eq compObsFeatureX (vp, tcpUpRate, TOL, Tstart, Tend) = float (sizeTCPUpload (vp, TOL, Tstart, Tend)) / (Tend - Tstart) .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 899 (mod SMC_CP3): multiple distinct parses for statement
+eq compObsFeatureX (vp, tcpDownRate, TOL, Tstart, Tend) = float (sizeTCPDownload (vp, TOL, Tstart, Tend)) / (Tend - Tstart) .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 907 (mod SMC_CP3): multiple distinct parses for statement
+eq compObsFeatureX (vp, tcpOutPktRate, TOL, Tstart, Tend) = float (countTCPOutPkt (vp, TOL, Tstart, Tend)) / (Tend - Tstart) .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 909 (mod SMC_CP3): multiple distinct parses for statement
+eq compObsFeatureX (vp, tcpInPktRate, TOL, Tstart, Tend) = float (countTCPInPkt (vp, TOL, Tstart, Tend)) / (Tend - Tstart) .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 1060 (mod SMC_CP3): multiple distinct parses for statement
+ceq expectedKObsFeature (vp, obsF, baselineCDF, binECDFs, T, Tend, winSize, binSize, Ksum, N) = if KD >= 0.0 then expectedKObsFeature (vp, obsF, baselineCDF, binECDFs, T + binSize, Tend, winSize, binSize, Ksum + KD, N + 1) else expectedKObsFeature (vp, obsF, baselineCDF, binECDFs, T + binSize, Tend, winSize, binSize, Ksum, N) fi if (T + winSize) <= (Tend + Tesp) /\ ECDF := getECDFObsFeatureRange (binECDFs, floor (rat (T / binSize)), (floor (rat (T / binSize)) + floor (rat (winSize / binSize))) - 1) /\ KD := KsDistance (baselineCDF, ECDF) .
+[31mWarning: [0m"smc_cp3-refactored.maude", line 1229 (mod SMC_CP3): multiple distinct parses for statement
+eq getCUSUMZt (< ADDR : Adversary | gt: (bl (vp, obsF, K, Zt) :; blList), attrs >, vp, obsF, Tstart, Tend, winSize, binSize) = if (Tstart + winSize) <= Tend then cusumRange (Zt, floor (rat (Tstart / binSize)), floor (rat ((Tend - winSize) / binSize))) else 0.0 fi .
