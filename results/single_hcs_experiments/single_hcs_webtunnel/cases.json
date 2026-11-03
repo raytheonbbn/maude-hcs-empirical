@@ -1,0 +1,1622 @@
+[
+  {
+    "feat": "dnsQueryRate",
+    "vantage": "ixpN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0033333333333333335,
+      0.0033333333333333335,
+      0.0033333333333333335,
+      0.0033333333333333335,
+      0.0033333333333333335,
+      0.0033333333333333335,
+      0.0033333333333333335,
+      0.0033333333333333335,
+      0.0033333333333333335,
+      0.0033333333333333335
+    ]
+  },
+  {
+    "feat": "dnsQueryRate",
+    "vantage": "srvN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "dnsQueryRate",
+    "vantage": "minN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "dnsQueryRate",
+    "vantage": "masN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "dnsQueryRate",
+    "vantage": "dnsN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "dnsQueryRate",
+    "vantage": "cl[1]",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0033333333333333335,
+      0.0033333333333333335,
+      0.0033333333333333335,
+      0.0033333333333333335,
+      0.0033333333333333335,
+      0.0033333333333333335,
+      0.0033333333333333335,
+      0.0033333333333333335,
+      0.0033333333333333335,
+      0.0033333333333333335
+    ]
+  },
+  {
+    "feat": "dnsQuerySize",
+    "vantage": "ixpN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      48.0,
+      48.0,
+      48.0,
+      48.0,
+      48.0,
+      48.0,
+      48.0,
+      48.0,
+      48.0,
+      48.0
+    ]
+  },
+  {
+    "feat": "dnsQuerySize",
+    "vantage": "srvN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "dnsQuerySize",
+    "vantage": "minN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "dnsQuerySize",
+    "vantage": "masN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "dnsQuerySize",
+    "vantage": "dnsN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "dnsQuerySize",
+    "vantage": "cl[1]",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      48.0,
+      48.0,
+      48.0,
+      48.0,
+      48.0,
+      48.0,
+      48.0,
+      48.0,
+      48.0,
+      48.0
+    ]
+  },
+  {
+    "feat": "dnsRespSize",
+    "vantage": "ixpN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      53.0,
+      53.0,
+      53.0,
+      53.0,
+      53.0,
+      53.0,
+      53.0,
+      53.0,
+      53.0,
+      53.0
+    ]
+  },
+  {
+    "feat": "dnsRespSize",
+    "vantage": "srvN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "dnsRespSize",
+    "vantage": "minN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "dnsRespSize",
+    "vantage": "masN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "dnsRespSize",
+    "vantage": "dnsN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "dnsRespSize",
+    "vantage": "cl[1]",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      53.0,
+      53.0,
+      53.0,
+      53.0,
+      53.0,
+      53.0,
+      53.0,
+      53.0,
+      53.0,
+      53.0
+    ]
+  },
+  {
+    "feat": "tcpUpRate",
+    "vantage": "ixpN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      104.14,
+      105.69666666666667,
+      106.475,
+      110.36666666666666,
+      112.70166666666667,
+      113.48,
+      117.37166666666667,
+      117.37166666666667,
+      118.92833333333333,
+      119.70666666666666
+    ]
+  },
+  {
+    "feat": "tcpUpRate",
+    "vantage": "srvN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      46.906666666666666,
+      47.68666666666667,
+      48.07666666666667,
+      50.026666666666664,
+      51.196666666666665,
+      51.586666666666666,
+      53.53666666666667,
+      53.53666666666667,
+      54.31666666666667,
+      54.70666666666666
+    ]
+  },
+  {
+    "feat": "tcpUpRate",
+    "vantage": "minN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpUpRate",
+    "vantage": "masN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpUpRate",
+    "vantage": "dnsN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpUpRate",
+    "vantage": "cl[1]",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      57.233333333333334,
+      58.01,
+      58.39833333333333,
+      60.34,
+      61.505,
+      61.89333333333333,
+      63.835,
+      63.835,
+      64.61166666666666,
+      65.0
+    ]
+  },
+  {
+    "feat": "tcpDownRate",
+    "vantage": "ixpN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      104.14,
+      105.69666666666667,
+      106.475,
+      110.36666666666666,
+      112.70166666666667,
+      113.48,
+      117.37166666666667,
+      117.37166666666667,
+      118.92833333333333,
+      119.70666666666666
+    ]
+  },
+  {
+    "feat": "tcpDownRate",
+    "vantage": "srvN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      57.233333333333334,
+      58.01,
+      58.39833333333333,
+      60.34,
+      61.505,
+      61.89333333333333,
+      63.835,
+      63.835,
+      64.61166666666666,
+      65.0
+    ]
+  },
+  {
+    "feat": "tcpDownRate",
+    "vantage": "minN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpDownRate",
+    "vantage": "masN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpDownRate",
+    "vantage": "dnsN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpDownRate",
+    "vantage": "cl[1]",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      46.906666666666666,
+      47.68666666666667,
+      48.07666666666667,
+      50.026666666666664,
+      51.196666666666665,
+      51.586666666666666,
+      53.53666666666667,
+      53.53666666666667,
+      54.31666666666667,
+      54.70666666666666
+    ]
+  },
+  {
+    "feat": "tcpUpToDownRate",
+    "vantage": "ixpN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "feat": "tcpUpToDownRate",
+    "vantage": "srvN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.8195690157251019,
+      0.8220421766362122,
+      0.8232540883016067,
+      0.8290796597061099,
+      0.8323984499905157,
+      0.8334769495906936,
+      0.8386726195138509,
+      0.8386726195138509,
+      0.8406634508731653,
+      0.8416410256410256
+    ]
+  },
+  {
+    "feat": "tcpUpToDownRate",
+    "vantage": "minN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpUpToDownRate",
+    "vantage": "masN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpUpToDownRate",
+    "vantage": "dnsN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpUpToDownRate",
+    "vantage": "cl[1]",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      1.1881550085303436,
+      1.1895366676894752,
+      1.1923603760662473,
+      1.1923603760662473,
+      1.1997932282243473,
+      1.2013477439937497,
+      1.2061567164179106,
+      1.2146918116896623,
+      1.216482594715504,
+      1.2201534963047187
+    ]
+  },
+  {
+    "feat": "tcpOutPktRate",
+    "vantage": "ixpN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.41,
+      0.4166666666666667,
+      0.42,
+      0.43666666666666665,
+      0.44666666666666666,
+      0.45,
+      0.4666666666666667,
+      0.4666666666666667,
+      0.47333333333333333,
+      0.4766666666666667
+    ]
+  },
+  {
+    "feat": "tcpOutPktRate",
+    "vantage": "srvN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.19666666666666666,
+      0.2,
+      0.20166666666666666,
+      0.21,
+      0.215,
+      0.21666666666666667,
+      0.225,
+      0.225,
+      0.22833333333333333,
+      0.23
+    ]
+  },
+  {
+    "feat": "tcpOutPktRate",
+    "vantage": "minN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpOutPktRate",
+    "vantage": "masN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpOutPktRate",
+    "vantage": "dnsN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpOutPktRate",
+    "vantage": "cl[1]",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.21333333333333335,
+      0.21666666666666667,
+      0.21833333333333332,
+      0.22666666666666666,
+      0.23166666666666666,
+      0.23333333333333334,
+      0.24166666666666667,
+      0.24166666666666667,
+      0.245,
+      0.24666666666666667
+    ]
+  },
+  {
+    "feat": "tcpInPktRate",
+    "vantage": "ixpN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.41,
+      0.4166666666666667,
+      0.42,
+      0.43666666666666665,
+      0.44666666666666666,
+      0.45,
+      0.4666666666666667,
+      0.4666666666666667,
+      0.47333333333333333,
+      0.4766666666666667
+    ]
+  },
+  {
+    "feat": "tcpInPktRate",
+    "vantage": "srvN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.21333333333333335,
+      0.21666666666666667,
+      0.21833333333333332,
+      0.22666666666666666,
+      0.23166666666666666,
+      0.23333333333333334,
+      0.24166666666666667,
+      0.24166666666666667,
+      0.245,
+      0.24666666666666667
+    ]
+  },
+  {
+    "feat": "tcpInPktRate",
+    "vantage": "minN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpInPktRate",
+    "vantage": "masN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpInPktRate",
+    "vantage": "dnsN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpInPktRate",
+    "vantage": "cl[1]",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.19666666666666666,
+      0.2,
+      0.20166666666666666,
+      0.21,
+      0.215,
+      0.21666666666666667,
+      0.225,
+      0.225,
+      0.22833333333333333,
+      0.23
+    ]
+  },
+  {
+    "feat": "tcpOutToInPktRate",
+    "vantage": "ixpN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "feat": "tcpOutToInPktRate",
+    "vantage": "srvN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.921875,
+      0.9230769230769231,
+      0.9236641221374046,
+      0.9264705882352942,
+      0.9280575539568345,
+      0.9285714285714286,
+      0.9310344827586207,
+      0.9310344827586207,
+      0.9319727891156463,
+      0.9324324324324325
+    ]
+  },
+  {
+    "feat": "tcpOutToInPktRate",
+    "vantage": "minN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpOutToInPktRate",
+    "vantage": "masN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpOutToInPktRate",
+    "vantage": "dnsN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpOutToInPktRate",
+    "vantage": "cl[1]",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      1.0724637681159421,
+      1.072992700729927,
+      1.0740740740740742,
+      1.0740740740740742,
+      1.0769230769230769,
+      1.0775193798449612,
+      1.0793650793650793,
+      1.0826446280991735,
+      1.0833333333333333,
+      1.0847457627118644
+    ]
+  },
+  {
+    "feat": "tcpPktSizeStdDev",
+    "vantage": "ixpN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      154.2971539496253,
+      154.83237455703522,
+      155.91973630980257,
+      155.91973630980257,
+      158.7416193957812,
+      159.32460108646467,
+      161.11284478867603,
+      164.23186962685952,
+      164.87768926085786,
+      166.19251252542094
+    ]
+  },
+  {
+    "feat": "tcpPktSizeStdDev",
+    "vantage": "srvN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      154.2971539496253,
+      154.83237455703522,
+      155.91973630980257,
+      155.91973630980257,
+      158.7416193957812,
+      159.32460108646467,
+      161.11284478867603,
+      164.23186962685952,
+      164.87768926085786,
+      166.19251252542094
+    ]
+  },
+  {
+    "feat": "tcpPktSizeStdDev",
+    "vantage": "minN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpPktSizeStdDev",
+    "vantage": "masN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpPktSizeStdDev",
+    "vantage": "dnsN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpPktSizeStdDev",
+    "vantage": "cl[1]",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      154.2971539496253,
+      154.83237455703522,
+      155.91973630980257,
+      155.91973630980257,
+      158.7416193957812,
+      159.32460108646467,
+      161.11284478867603,
+      164.23186962685952,
+      164.87768926085786,
+      166.19251252542094
+    ]
+  },
+  {
+    "feat": "tcpPktSize",
+    "vantage": "ixpN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      251.13286713286712,
+      251.25704225352112,
+      251.51071428571427,
+      251.51071428571427,
+      252.17777777777778,
+      252.31716417910448,
+      252.74809160305344,
+      253.51190476190476,
+      253.672,
+      254.0
+    ]
+  },
+  {
+    "feat": "tcpPktSize",
+    "vantage": "srvN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      251.13286713286712,
+      251.25704225352112,
+      251.51071428571427,
+      251.51071428571427,
+      252.17777777777778,
+      252.31716417910448,
+      252.74809160305344,
+      253.51190476190476,
+      253.672,
+      254.0
+    ]
+  },
+  {
+    "feat": "tcpPktSize",
+    "vantage": "minN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpPktSize",
+    "vantage": "masN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpPktSize",
+    "vantage": "dnsN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpPktSize",
+    "vantage": "cl[1]",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      251.13286713286712,
+      251.25704225352112,
+      251.51071428571427,
+      251.51071428571427,
+      252.17777777777778,
+      252.31716417910448,
+      252.74809160305344,
+      253.51190476190476,
+      253.672,
+      254.0
+    ]
+  },
+  {
+    "feat": "tcpPktInterarrival",
+    "vantage": "ixpN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      2.048324430434294,
+      2.0736654371987213,
+      2.075604532840174,
+      2.0916629531623685,
+      2.1693873626370266,
+      2.187832556215149,
+      2.2530291844331916,
+      2.301254901783705,
+      2.333374613619228,
+      2.3898634825989977
+    ]
+  },
+  {
+    "feat": "tcpPktInterarrival",
+    "vantage": "srvN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      3.9710807054416883,
+      4.019339634823234,
+      4.021315690559777,
+      4.052433972030819,
+      4.198140134751996,
+      4.232811113602595,
+      4.3556823735547034,
+      4.443001918717043,
+      4.503776272659282,
+      4.6101835507298485
+    ]
+  },
+  {
+    "feat": "tcpPktInterarrival",
+    "vantage": "minN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpPktInterarrival",
+    "vantage": "masN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpPktInterarrival",
+    "vantage": "dnsN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpPktInterarrival",
+    "vantage": "cl[1]",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      4.256487872565904,
+      4.310397030223044,
+      4.316865230165987,
+      4.350293105943193,
+      4.51884768800447,
+      4.558734422227964,
+      4.699245849713627,
+      4.808173965876777,
+      4.87711357870503,
+      4.999000692458516
+    ]
+  },
+  {
+    "feat": "tcpDirectionChange",
+    "vantage": "ixpN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpDirectionChange",
+    "vantage": "srvN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      233.0,
+      237.0,
+      239.0,
+      249.0,
+      255.0,
+      257.0,
+      267.0,
+      267.0,
+      271.0,
+      273.0
+    ]
+  },
+  {
+    "feat": "tcpDirectionChange",
+    "vantage": "minN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpDirectionChange",
+    "vantage": "masN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpDirectionChange",
+    "vantage": "dnsN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpDirectionChange",
+    "vantage": "cl[1]",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      231.0,
+      233.0,
+      235.0,
+      247.0,
+      255.0,
+      255.0,
+      263.0,
+      265.0,
+      267.0,
+      273.0
+    ]
+  },
+  {
+    "feat": "tcpActiveFlow",
+    "vantage": "ixpN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0
+    ]
+  },
+  {
+    "feat": "tcpActiveFlow",
+    "vantage": "srvN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0
+    ]
+  },
+  {
+    "feat": "tcpActiveFlow",
+    "vantage": "minN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpActiveFlow",
+    "vantage": "masN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpActiveFlow",
+    "vantage": "dnsN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpActiveFlow",
+    "vantage": "cl[1]",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0
+    ]
+  },
+  {
+    "feat": "tcpNewCnx",
+    "vantage": "ixpN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ]
+  },
+  {
+    "feat": "tcpNewCnx",
+    "vantage": "srvN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ]
+  },
+  {
+    "feat": "tcpNewCnx",
+    "vantage": "minN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpNewCnx",
+    "vantage": "masN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpNewCnx",
+    "vantage": "dnsN",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "feat": "tcpNewCnx",
+    "vantage": "cl[1]",
+    "window_size": 600,
+    "traceback": null,
+    "samples": [
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0,
+      2.0
+    ]
+  }
+]

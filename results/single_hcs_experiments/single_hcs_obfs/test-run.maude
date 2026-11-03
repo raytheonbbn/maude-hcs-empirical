@@ -1,0 +1,7 @@
+sload test
+sload /Users/lwest/Documents/pwnd2/maude-hcs/maude_hcs/lib/smc/smc_cp3-refactored
+mod HCS_TEST is
+  inc TEST .  
+  inc SMC_CP3 . 
+eq slimit = 610.0 .
+endm

@@ -1,0 +1,58 @@
+env: single_tgen_mastodon
+conversation_duration: 600
+max_start_delay: 900
+one_way_availability: 30
+analysis_window_size: 600
+network:
+  server_net:
+    network: server
+    params:
+      upstream:
+        latency: 10
+        loss_profile: excellent
+      downstream:
+        latency: 10
+        loss_profile: excellent
+  dns_net:
+    network: dns
+    params:
+      upstream:
+        latency: 20
+        loss_profile: good
+      downstream:
+        latency: 20
+        loss_profile: good
+  mastodon_net:
+    network: mastodon
+    params:
+      upstream:
+        latency: 5
+        loss_profile: good
+      downstream:
+        latency: 5
+        loss_profile: good
+  client_net_mastodon:
+    nat: false
+    network: client
+    params:
+      upstream:
+        latency: 20
+        loss_profile: excellent
+      downstream:
+        latency: 20
+        loss_profile: excellent
+nodes:
+  node_type_mastodon:
+    channel_config:
+    - direction: bidirectional
+      channel: mastodon
+      vars:
+        client:
+          user_model: mastodon_client_scenario_2.json
+        server:
+          user_model: mastodon_server_scenario_2.json
+    client_per_network:
+      client_net_mastodon:
+        quantity: 2
+        profiles:
+          irc_casualchat: 1
