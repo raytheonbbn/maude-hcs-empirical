@@ -1,0 +1,48 @@
+{
+  "name": "SingleHCSIodineConfidentiality",
+  "feats": [
+    "dnsQueryRate",
+    "dnsQuerySize",
+    "dnsRespSize",
+    "tcpUpRate",
+    "tcpDownRate",
+    "tcpUpToDownRate",
+    "tcpOutPktRate",
+    "tcpInPktRate",
+    "tcpOutToInPktRate",
+    "tcpPktSizeStdDev",
+    "tcpPktSize",
+    "tcpPktInterarrival",
+    "tcpDirectionChange",
+    "tcpActiveFlow",
+    "tcpNewCnx"
+  ],
+  "window_sizes": [
+    600
+  ],
+  "vantages": [
+    "ixpN",
+    "srvN",
+    "minN",
+    "masN",
+    "dnsN",
+    "cl[1]"
+  ],
+  "vantage_networks": {
+    "ixpN": null,
+    "srvN": "server_net",
+    "minN": "minio_net",
+    "masN": "mastodon_net",
+    "dnsN": "dns_net",
+    "cl[1]": "client_net_iodine"
+  },
+  "n_samples": 24,
+  "requested_trials": 24,
+  "method": "p-value",
+  "alpha": 0.05,
+  "delta": 0.05,
+  "yaml": "experiment.yaml",
+  "yaml_sha256": "6a04f4f0b6cb6cdc205486a75e2c86a4134384c622f58633285ffd58786bd3f7",
+  "bin_size": 10,
+  "comparison": "unpaired HCS-only; no control arm"
+}
