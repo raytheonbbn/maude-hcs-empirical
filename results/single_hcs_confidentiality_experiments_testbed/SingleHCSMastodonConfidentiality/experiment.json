@@ -1,0 +1,48 @@
+{
+  "name": "SingleHCSMastodonConfidentiality",
+  "feats": [
+    "dnsQueryRate",
+    "dnsQuerySize",
+    "dnsRespSize",
+    "tcpUpRate",
+    "tcpDownRate",
+    "tcpUpToDownRate",
+    "tcpOutPktRate",
+    "tcpInPktRate",
+    "tcpOutToInPktRate",
+    "tcpPktSizeStdDev",
+    "tcpPktSize",
+    "tcpPktInterarrival",
+    "tcpDirectionChange",
+    "tcpActiveFlow",
+    "tcpNewCnx"
+  ],
+  "window_sizes": [
+    600
+  ],
+  "vantages": [
+    "ixpN",
+    "srvN",
+    "minN",
+    "masN",
+    "dnsN",
+    "cl[1]"
+  ],
+  "vantage_networks": {
+    "ixpN": null,
+    "srvN": "server_net",
+    "minN": "minio_net",
+    "masN": "mastodon_net",
+    "dnsN": "dns_net",
+    "cl[1]": "client_net_mastodon"
+  },
+  "n_samples": 23,
+  "requested_trials": 24,
+  "method": "p-value",
+  "alpha": 0.05,
+  "delta": 0.05,
+  "yaml": "experiment.yaml",
+  "yaml_sha256": "5b26f6097574d92322174a617b23533565e148eea2787081379d25f4b86aed26",
+  "bin_size": 10,
+  "comparison": "unpaired HCS-only; no control arm"
+}
