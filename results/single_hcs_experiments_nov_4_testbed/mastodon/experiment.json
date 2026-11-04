@@ -1,0 +1,70 @@
+{
+  "name": "SingleHCSMastodon",
+  "yaml": "/src/single-hcs/SingleHCSMastodon/experiment.yaml",
+  "yaml_sha256": "5b26f6097574d92322174a617b23533565e148eea2787081379d25f4b86aed26",
+  "trials": 24,
+  "start_flags": "-R",
+  "source_yaml": "/Users/dcirimel/pwnd2/single_hcs/mastodon.yaml",
+  "source_yaml_sha256": "c4560355b735d63737d51722694ba6dcaa211e28ac11c65d6989d5e6f2f60bc1",
+  "assets": {
+    "testbed/src/static/tc_profiles/single_hcs_mastodon_excellent.yaml": "a320f6c31da069825a6a1f48a400796e0d8a76270adf13f7fc0b81726881ec4a",
+    "testbed/src/static/tc_profiles/single_hcs_mastodon_good.yaml": "f25f838a6d0d2c38502cf760f14d89f9d99a0b2167a548c6e89c8324baae782e",
+    "testbed/src/static/tc_profiles/single_hcs_mastodon_none.yaml": "5fb2ccaaf7bc8ceeff27d23766bf5f6122424f624903acf04cdf4f930ccb0afb",
+    "testbed/src/static/irc_input/single_hcs_mastodon_irc_casualchat.json": "3ddf150ede9b9167666cdabd92a67d40078d03fd3eaa1512b0392e4ef71fc4f8",
+    "testbed/src/static/mastodon_actions/single_hcs_mastodon_mastodon_client_scenario_2.json": "409af77c970272c99c2968cd2bc0d429d2009603392e5bae1999a6f4995a8266",
+    "testbed/src/static/mastodon_actions/single_hcs_mastodon_mastodon_server_scenario_2.json": "188a5ca118d333fe26f6ed577920d3303d9a228fd53aa38332792c9c0d39198e"
+  },
+  "asset_sources": {
+    "testbed/src/static/tc_profiles/single_hcs_mastodon_excellent.yaml": {
+      "path": "testbed/src/static/tc_profiles/excellent.yaml",
+      "sha256": "a320f6c31da069825a6a1f48a400796e0d8a76270adf13f7fc0b81726881ec4a"
+    },
+    "testbed/src/static/tc_profiles/single_hcs_mastodon_good.yaml": {
+      "path": "testbed/src/static/tc_profiles/good.yaml",
+      "sha256": "f25f838a6d0d2c38502cf760f14d89f9d99a0b2167a548c6e89c8324baae782e"
+    },
+    "testbed/src/static/tc_profiles/single_hcs_mastodon_none.yaml": {
+      "path": "testbed/src/static/tc_profiles/none.yaml",
+      "sha256": "5fb2ccaaf7bc8ceeff27d23766bf5f6122424f624903acf04cdf4f930ccb0afb"
+    },
+    "testbed/src/static/irc_input/single_hcs_mastodon_irc_casualchat.json": {
+      "path": "testbed/src/static/irc_input/irc_casualchat.json",
+      "sha256": "3ddf150ede9b9167666cdabd92a67d40078d03fd3eaa1512b0392e4ef71fc4f8"
+    },
+    "testbed/src/static/mastodon_actions/single_hcs_mastodon_mastodon_client_scenario_2.json": {
+      "path": "testbed/src/static/mastodon_actions/conf_expandedmastodonconfidentiality_mastodon_client_scenario_2.json",
+      "sha256": "409af77c970272c99c2968cd2bc0d429d2009603392e5bae1999a6f4995a8266"
+    },
+    "testbed/src/static/mastodon_actions/single_hcs_mastodon_mastodon_server_scenario_2.json": {
+      "path": "testbed/src/static/mastodon_actions/conf_expandedmastodonconfidentiality_mastodon_server_scenario_2.json",
+      "sha256": "188a5ca118d333fe26f6ed577920d3303d9a228fd53aa38332792c9c0d39198e"
+    }
+  },
+  "model_adaptations": {
+    "testbed/src/static/mastodon_actions/single_hcs_mastodon_mastodon_client_scenario_2.json": {
+      "source": "/Users/dcirimel/pwnd2/maude-hcs-empirical/results/isolated_channel_confidentiality_experiments/IodineConfidentiality+4b118321348e4f31a21e82997485741f/test/mastodon_action_models/mastodon_client_scenario_2.json",
+      "source_sha256": "3b13b0f7198201c6181bc3adcb79c4c11d89f9070a2284d83b0cef0ec77e440b",
+      "changes": "wait_remove=true (retain delays in timeline timestamps); media->post, download->fetch"
+    },
+    "testbed/src/static/mastodon_actions/single_hcs_mastodon_mastodon_server_scenario_2.json": {
+      "source": "/Users/dcirimel/pwnd2/maude-hcs-empirical/results/isolated_channel_confidentiality_experiments/IodineConfidentiality+4b118321348e4f31a21e82997485741f/test/mastodon_action_models/mastodon_server_scenario_2.json",
+      "source_sha256": "03ba05b98a35af8b4684c1345c0ee2bb8d72c3dd07542246c9c05d15c89c68e4",
+      "changes": "wait_remove=true (retain delays in timeline timestamps); media->post, download->fetch"
+    }
+  },
+  "supplementary_service_networks": {
+    "minio_net": {
+      "network": "minio",
+      "params": {
+        "upstream": {
+          "latency": 0,
+          "loss_profile": "none"
+        },
+        "downstream": {
+          "latency": 0,
+          "loss_profile": "none"
+        }
+      }
+    }
+  }
+}

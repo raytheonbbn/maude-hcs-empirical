@@ -1,0 +1,129 @@
+{
+  "run_id": "SingleHCSMastodon",
+  "yaml": "/src/single-hcs/SingleHCSMastodon/experiment.yaml",
+  "start_flags": "-R",
+  "aborted": false,
+  "cleanup": [],
+  "trials": [
+    {
+      "trial": 1,
+      "instance": "aws-1",
+      "success": true
+    },
+    {
+      "trial": 2,
+      "instance": "aws-2",
+      "success": true
+    },
+    {
+      "trial": 3,
+      "instance": "aws-3",
+      "success": true
+    },
+    {
+      "trial": 4,
+      "instance": "aws-1",
+      "success": true
+    },
+    {
+      "trial": 5,
+      "instance": "aws-2",
+      "success": true
+    },
+    {
+      "trial": 6,
+      "instance": "aws-3",
+      "success": true
+    },
+    {
+      "trial": 7,
+      "instance": "aws-1",
+      "success": true
+    },
+    {
+      "trial": 8,
+      "instance": "aws-2",
+      "success": true
+    },
+    {
+      "trial": 9,
+      "instance": "aws-3",
+      "success": true
+    },
+    {
+      "trial": 10,
+      "instance": "aws-1",
+      "success": true
+    },
+    {
+      "trial": 11,
+      "instance": "aws-2",
+      "success": true
+    },
+    {
+      "trial": 12,
+      "instance": "aws-3",
+      "success": true
+    },
+    {
+      "trial": 13,
+      "instance": "aws-1",
+      "success": true
+    },
+    {
+      "trial": 14,
+      "instance": "aws-2",
+      "success": true
+    },
+    {
+      "trial": 15,
+      "instance": "aws-3",
+      "success": true
+    },
+    {
+      "trial": 16,
+      "instance": "aws-1",
+      "success": true
+    },
+    {
+      "trial": 17,
+      "instance": "aws-2",
+      "success": true
+    },
+    {
+      "trial": 18,
+      "instance": "aws-3",
+      "success": true
+    },
+    {
+      "trial": 19,
+      "instance": "aws-1",
+      "success": true
+    },
+    {
+      "trial": 20,
+      "instance": "aws-2",
+      "success": true
+    },
+    {
+      "trial": 21,
+      "instance": "aws-3",
+      "success": true
+    },
+    {
+      "trial": 22,
+      "instance": "aws-1",
+      "success": true
+    },
+    {
+      "trial": 23,
+      "instance": "aws-2",
+      "success": true
+    },
+    {
+      "trial": 24,
+      "instance": "aws-3",
+      "success": true
+    }
+  ]
+}

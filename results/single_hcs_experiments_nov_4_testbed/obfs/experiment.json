@@ -1,0 +1,62 @@
+{
+  "name": "SingleHCSObfs",
+  "yaml": "/src/single-hcs/SingleHCSObfs/experiment.yaml",
+  "yaml_sha256": "766804419c62c3dfa01713571dce584195333a43af155cafb496a4481de8def2",
+  "trials": 24,
+  "start_flags": "-R",
+  "source_yaml": "/Users/dcirimel/pwnd2/single_hcs/obfs.yaml",
+  "source_yaml_sha256": "8c861011dc248defb739340e81253070716621c4cdf0ae783532c518872cf5ab",
+  "assets": {
+    "testbed/src/static/tc_profiles/single_hcs_obfs_excellent.yaml": "a320f6c31da069825a6a1f48a400796e0d8a76270adf13f7fc0b81726881ec4a",
+    "testbed/src/static/tc_profiles/single_hcs_obfs_good.yaml": "f25f838a6d0d2c38502cf760f14d89f9d99a0b2167a548c6e89c8324baae782e",
+    "testbed/src/static/tc_profiles/single_hcs_obfs_none.yaml": "5fb2ccaaf7bc8ceeff27d23766bf5f6122424f624903acf04cdf4f930ccb0afb",
+    "testbed/src/static/irc_input/single_hcs_obfs_irc_casualchat.json": "3ddf150ede9b9167666cdabd92a67d40078d03fd3eaa1512b0392e4ef71fc4f8"
+  },
+  "asset_sources": {
+    "testbed/src/static/tc_profiles/single_hcs_obfs_excellent.yaml": {
+      "path": "testbed/src/static/tc_profiles/excellent.yaml",
+      "sha256": "a320f6c31da069825a6a1f48a400796e0d8a76270adf13f7fc0b81726881ec4a"
+    },
+    "testbed/src/static/tc_profiles/single_hcs_obfs_good.yaml": {
+      "path": "testbed/src/static/tc_profiles/good.yaml",
+      "sha256": "f25f838a6d0d2c38502cf760f14d89f9d99a0b2167a548c6e89c8324baae782e"
+    },
+    "testbed/src/static/tc_profiles/single_hcs_obfs_none.yaml": {
+      "path": "testbed/src/static/tc_profiles/none.yaml",
+      "sha256": "5fb2ccaaf7bc8ceeff27d23766bf5f6122424f624903acf04cdf4f930ccb0afb"
+    },
+    "testbed/src/static/irc_input/single_hcs_obfs_irc_casualchat.json": {
+      "path": "testbed/src/static/irc_input/irc_casualchat.json",
+      "sha256": "3ddf150ede9b9167666cdabd92a67d40078d03fd3eaa1512b0392e4ef71fc4f8"
+    }
+  },
+  "model_adaptations": {},
+  "supplementary_service_networks": {
+    "minio_net": {
+      "network": "minio",
+      "params": {
+        "upstream": {
+          "latency": 0,
+          "loss_profile": "none"
+        },
+        "downstream": {
+          "latency": 0,
+          "loss_profile": "none"
+        }
+      }
+    },
+    "mastodon_net": {
+      "network": "mastodon",
+      "params": {
+        "upstream": {
+          "latency": 5,
+          "loss_profile": "good"
+        },
+        "downstream": {
+          "latency": 5,
+          "loss_profile": "good"
+        }
+      }
+    }
+  }
+}

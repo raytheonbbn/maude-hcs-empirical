@@ -1,0 +1,153 @@
+{
+  "source_run": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs",
+  "prepared_inputs": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/prepared-inputs/SingleHCSObfs",
+  "testbed": "cp3",
+  "collected_trials": 24,
+  "analyzed_trials": 24,
+  "excluded_trials": [],
+  "python_version": "3.12.4",
+  "analysis_command": "/Users/dcirimel/.pyenv/versions/3.12.4/bin/python3 -m orchestrator analyze orchestrator-results/single-hcs-24-trials/SingleHCSObfs",
+  "analysis_code_sha256": {
+    "maude-hcs-exp/orchestrator/dispatch_experiment.py": "c58a2223345b54f8f89437ee297c5465175ac0ba26542cef10cdcc1c2109957d",
+    "maude-hcs-exp/orchestrator/irc_server_log.py": "94773794ea74895936a91d4073aca924b2acd7398eab20a8ad9aa19481255348"
+  },
+  "asset_paths": {
+    "testbed/src/static/tc_profiles/single_hcs_obfs_excellent.yaml": "user_models/static/tc_profiles/single_hcs_obfs_excellent.yaml",
+    "testbed/src/static/tc_profiles/single_hcs_obfs_good.yaml": "user_models/static/tc_profiles/single_hcs_obfs_good.yaml",
+    "testbed/src/static/tc_profiles/single_hcs_obfs_none.yaml": "user_models/static/tc_profiles/single_hcs_obfs_none.yaml",
+    "testbed/src/static/irc_input/single_hcs_obfs_irc_casualchat.json": "user_models/static/irc_input/single_hcs_obfs_irc_casualchat.json"
+  },
+  "exported_files_sha256": {
+    "analysis.json": "20cb431c5ef19e3a762f341e26dd4b787eab8ad61ef0de06b0d4af235fa93b0c",
+    "experiment.yaml": "766804419c62c3dfa01713571dce584195333a43af155cafb496a4481de8def2",
+    "manifest.json": "fb806266fe538baaecffe7b620c5ddcdab9efa22a23c11bc3056fab1563d00c7",
+    "source.yaml": "8c861011dc248defb739340e81253070716621c4cdf0ae783532c518872cf5ab",
+    "experiment.json": "b507a60f6de8267a7c05c9a73639e3cc8ee591f01fd6016c7f324246dd18956e",
+    "user_models/static/tc_profiles/single_hcs_obfs_excellent.yaml": "a320f6c31da069825a6a1f48a400796e0d8a76270adf13f7fc0b81726881ec4a",
+    "user_models/static/tc_profiles/single_hcs_obfs_good.yaml": "f25f838a6d0d2c38502cf760f14d89f9d99a0b2167a548c6e89c8324baae782e",
+    "user_models/static/tc_profiles/single_hcs_obfs_none.yaml": "5fb2ccaaf7bc8ceeff27d23766bf5f6122424f624903acf04cdf4f930ccb0afb",
+    "user_models/static/irc_input/single_hcs_obfs_irc_casualchat.json": "3ddf150ede9b9167666cdabd92a67d40078d03fd3eaa1512b0392e4ef71fc4f8"
+  },
+  "trial_archives": [
+    {
+      "trial": 1,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-001/collection/testbed/src/collection/single_hcs_obfs_20261104_172825.zip",
+      "sha256": "e7896b1226b39e8439b8a76aeed002ceabb406056e718d981f494947e8e48ce1"
+    },
+    {
+      "trial": 2,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-002/collection/testbed/src/collection/single_hcs_obfs_20261104_172927.zip",
+      "sha256": "d00b42d17ea9dabb4ba52ca77e2b4efe289747b58b0d372838dc9a4dc47c3ebc"
+    },
+    {
+      "trial": 3,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-003/collection/testbed/src/collection/single_hcs_obfs_20261104_172930.zip",
+      "sha256": "f9ddb7192f7a49b45591354df1c0dbde9fc2942ab6c774535d300116797d0cb5"
+    },
+    {
+      "trial": 4,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-004/collection/testbed/src/collection/single_hcs_obfs_20261104_174832.zip",
+      "sha256": "db09e43bd810a674892a464101d13a8ccbbdd43ad62248c7beb6b985764949e5"
+    },
+    {
+      "trial": 5,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-005/collection/testbed/src/collection/single_hcs_obfs_20261104_174929.zip",
+      "sha256": "1a9d21d6e4b30222699fe5129fb5bdc4a7ea8583ff635fa790c66480a1977639"
+    },
+    {
+      "trial": 6,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-006/collection/testbed/src/collection/single_hcs_obfs_20261104_174822.zip",
+      "sha256": "fbb1b63c41a2551645e3076a698604c0ba4761af266806ef5e56b721656ff6a5"
+    },
+    {
+      "trial": 7,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-007/collection/testbed/src/collection/single_hcs_obfs_20261104_180836.zip",
+      "sha256": "74b15fdb380a227eb439ba9c69d3cf3e7700da5c3a0fb9c885c8586c86d41310"
+    },
+    {
+      "trial": 8,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-008/collection/testbed/src/collection/single_hcs_obfs_20261104_181028.zip",
+      "sha256": "f5b6a1dc4fc3e6fb571e6a9c87d24c1789ea391d6a791af27165987e63784774"
+    },
+    {
+      "trial": 9,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-009/collection/testbed/src/collection/single_hcs_obfs_20261104_180730.zip",
+      "sha256": "552a7910f2fedaa68b89591564e09379703dce5713963db2f112d4ab100b7b83"
+    },
+    {
+      "trial": 10,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-010/collection/testbed/src/collection/single_hcs_obfs_20261104_182934.zip",
+      "sha256": "0a6fff04f487c8e6db23948f9bd43416ebf289b11b7ea9ec84ef7f5db05fae37"
+    },
+    {
+      "trial": 11,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-011/collection/testbed/src/collection/single_hcs_obfs_20261104_183133.zip",
+      "sha256": "63c33384876f0943c2369681a639cda21cf6dd66871046711e1456c79fbe3783"
+    },
+    {
+      "trial": 12,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-012/collection/testbed/src/collection/single_hcs_obfs_20261104_182730.zip",
+      "sha256": "c1e49acb8d7b0dc6a3aa2f1e2e7b6552d7133c8b1f776f5606d04718c37c5c04"
+    },
+    {
+      "trial": 13,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-013/collection/testbed/src/collection/single_hcs_obfs_20261104_185032.zip",
+      "sha256": "c9355a517493b37e36ace88126c24ca44fe04210871d9767d000a446eaa9274c"
+    },
+    {
+      "trial": 14,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-014/collection/testbed/src/collection/single_hcs_obfs_20261104_185230.zip",
+      "sha256": "c27023ee5c1047810d770cff3e3837e171c4b67b92b3bab81122a782340afe6f"
+    },
+    {
+      "trial": 15,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-015/collection/testbed/src/collection/single_hcs_obfs_20261104_184630.zip",
+      "sha256": "df20bea68ab7b4c05d3e6aac5714a62448af87f521a7b97bb8126072be88ad2f"
+    },
+    {
+      "trial": 16,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-016/collection/testbed/src/collection/single_hcs_obfs_20261104_191035.zip",
+      "sha256": "03ae06d4724d6d051a0dba75bf86a3edd1c0125d449255c46fe52186ba03f49d"
+    },
+    {
+      "trial": 17,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-017/collection/testbed/src/collection/single_hcs_obfs_20261104_191229.zip",
+      "sha256": "3077087fe052e2ec859634628ded2f26cafd0fd2247e5429f0b93c2302c7f27c"
+    },
+    {
+      "trial": 18,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-018/collection/testbed/src/collection/single_hcs_obfs_20261104_190528.zip",
+      "sha256": "68598aa3c00264c775c22ea11ccb666f39c426c750f9c33320f6269ba702060a"
+    },
+    {
+      "trial": 19,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-019/collection/testbed/src/collection/single_hcs_obfs_20261104_193135.zip",
+      "sha256": "34db7f13e031f10654d248d6b2f6f697b5a1cbdb7aa8aed6ce90aaa0bf9a2fb5"
+    },
+    {
+      "trial": 20,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-020/collection/testbed/src/collection/single_hcs_obfs_20261104_193129.zip",
+      "sha256": "30beb0d9d9c44a9b0a0642e5ccca3a27e5bcd623404e6873dd835426ef9a5d4c"
+    },
+    {
+      "trial": 21,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-021/collection/testbed/src/collection/single_hcs_obfs_20261104_192318.zip",
+      "sha256": "ab8c93edbd4e07000c72798a812e34433e6c103f46ea3393741010e0d3089d3f"
+    },
+    {
+      "trial": 22,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-022/collection/testbed/src/collection/single_hcs_obfs_20261104_195233.zip",
+      "sha256": "65852102f5021f3fcac2d77d197fac2aa974d1eed440e878c771fe467bf3e888"
+    },
+    {
+      "trial": 23,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-023/collection/testbed/src/collection/single_hcs_obfs_20261104_195228.zip",
+      "sha256": "e17bf9a5222c4e6fee19e88f79306c80e69e3c97f2431054c10339ae09b29e1d"
+    },
+    {
+      "trial": 24,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSObfs/trial-024/collection/testbed/src/collection/single_hcs_obfs_20261104_194229.zip",
+      "sha256": "ddbe9b4cf01288278eab7f292961a036b3721c1b63b6028b50babb81c38d0bbc"
+    }
+  ]
+}

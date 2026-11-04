@@ -1,0 +1,51 @@
+env: single_tgen_ftp_obfs
+conversation_duration: 600
+max_start_delay: 120
+one_way_availability: 30
+analysis_window_size: 600
+
+network:
+  server_net:
+    network: server
+    params:
+      upstream:
+        latency: 10
+        loss_profile: "excellent"
+      downstream:
+        latency: 10
+        loss_profile: "excellent"
+  dns_net:
+    network: dns
+    params:
+      upstream:
+        latency: 20
+        loss_profile: "good"
+      downstream:
+        latency: 20
+        loss_profile: "good"
+  client_net_obfs:
+    nat: false
+    network: client
+    params:
+      upstream:
+        latency: 15
+        loss_profile: "none"
+      downstream:
+        latency: 15
+        loss_profile: "none"
+        
+nodes:
+  node_type_obfs:
+    channel_config:
+      - direction: bidirectional
+        channel: obfs
+        vars:
+          client:
+            iat: "0"
+          server:
+            iat: "0"
+    client_per_network:
+      client_net_obfs:
+        quantity: 2
+        profiles:
+          irc_casualchat: 1

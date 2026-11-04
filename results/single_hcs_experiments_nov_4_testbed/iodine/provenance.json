@@ -1,0 +1,153 @@
+{
+  "source_run": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine",
+  "prepared_inputs": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/prepared-inputs/SingleHCSIodine",
+  "testbed": "cp3",
+  "collected_trials": 24,
+  "analyzed_trials": 24,
+  "excluded_trials": [],
+  "python_version": "3.12.4",
+  "analysis_command": "/Users/dcirimel/.pyenv/versions/3.12.4/bin/python3 -m orchestrator analyze orchestrator-results/single-hcs-24-trials/SingleHCSIodine",
+  "analysis_code_sha256": {
+    "maude-hcs-exp/orchestrator/dispatch_experiment.py": "c58a2223345b54f8f89437ee297c5465175ac0ba26542cef10cdcc1c2109957d",
+    "maude-hcs-exp/orchestrator/irc_server_log.py": "94773794ea74895936a91d4073aca924b2acd7398eab20a8ad9aa19481255348"
+  },
+  "asset_paths": {
+    "testbed/src/static/tc_profiles/single_hcs_iodine_excellent.yaml": "user_models/static/tc_profiles/single_hcs_iodine_excellent.yaml",
+    "testbed/src/static/tc_profiles/single_hcs_iodine_good.yaml": "user_models/static/tc_profiles/single_hcs_iodine_good.yaml",
+    "testbed/src/static/tc_profiles/single_hcs_iodine_none.yaml": "user_models/static/tc_profiles/single_hcs_iodine_none.yaml",
+    "testbed/src/static/irc_input/single_hcs_iodine_irc_casualchat.json": "user_models/static/irc_input/single_hcs_iodine_irc_casualchat.json"
+  },
+  "exported_files_sha256": {
+    "analysis.json": "59d2a23ecb5a4a1a2f6d8e78a1f3bf85523a8f674d510f105a3be9f95cbab45d",
+    "experiment.yaml": "6a04f4f0b6cb6cdc205486a75e2c86a4134384c622f58633285ffd58786bd3f7",
+    "manifest.json": "bfbbc8b78afad6fdff152c3c9a28072b13ae06a1367bdb99cb2f0326d78e0cec",
+    "source.yaml": "bdd0e3de955c6269df093e141a5cc8971125bb60c1814c84e0b5550123e47ad9",
+    "experiment.json": "b8cce3b6c2297c2dc7eb3c5c1b19556cc2ab5847c96b3881d035a175219025ac",
+    "user_models/static/tc_profiles/single_hcs_iodine_excellent.yaml": "a320f6c31da069825a6a1f48a400796e0d8a76270adf13f7fc0b81726881ec4a",
+    "user_models/static/tc_profiles/single_hcs_iodine_good.yaml": "f25f838a6d0d2c38502cf760f14d89f9d99a0b2167a548c6e89c8324baae782e",
+    "user_models/static/tc_profiles/single_hcs_iodine_none.yaml": "5fb2ccaaf7bc8ceeff27d23766bf5f6122424f624903acf04cdf4f930ccb0afb",
+    "user_models/static/irc_input/single_hcs_iodine_irc_casualchat.json": "3ddf150ede9b9167666cdabd92a67d40078d03fd3eaa1512b0392e4ef71fc4f8"
+  },
+  "trial_archives": [
+    {
+      "trial": 1,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-001/collection/testbed/src/collection/single_hcs_iodine_20261103_205532.zip",
+      "sha256": "4e94e028fc5fdc64e2dc5f0d2f95b8674229ba5207052ecfea9e52681d8f6981"
+    },
+    {
+      "trial": 2,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-002/collection/testbed/src/collection/single_hcs_iodine_20261103_205636.zip",
+      "sha256": "53c0cff2c13f0973ac84bb773469ef822017ff7b2c08399746594226b3e5c06f"
+    },
+    {
+      "trial": 3,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-003/collection/testbed/src/collection/single_hcs_iodine_20261103_205527.zip",
+      "sha256": "d4f5b71206b0c2c285fbecdad13fc155f74d23cc29b32a640ff36bb0d7a42079"
+    },
+    {
+      "trial": 4,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-004/collection/testbed/src/collection/single_hcs_iodine_20261103_211536.zip",
+      "sha256": "2c241ad8212cf8c3e05774926152d9c95bcf97249beccab83ab325c224534312"
+    },
+    {
+      "trial": 5,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-005/collection/testbed/src/collection/single_hcs_iodine_20261103_211736.zip",
+      "sha256": "cc76199586ab5a1267d6b81468209aaa3217bfe162f9bcfb047309cce9ef486f"
+    },
+    {
+      "trial": 6,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-006/collection/testbed/src/collection/single_hcs_iodine_20261103_211430.zip",
+      "sha256": "892a233bb0d02f1165ccc7f4b6e40184f5159bcd568fea10fbd28676ecc285b6"
+    },
+    {
+      "trial": 7,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-007/collection/testbed/src/collection/single_hcs_iodine_20261103_213640.zip",
+      "sha256": "f6a1a15e41d14415e986a8779c2ac410c7e41a26d700ef0bfc2557b2837ce47a"
+    },
+    {
+      "trial": 8,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-008/collection/testbed/src/collection/single_hcs_iodine_20261103_213838.zip",
+      "sha256": "899c083ed3449b1d46aa081ececf4eee4e296d9ae12b7e4b9875dbd7423252d9"
+    },
+    {
+      "trial": 9,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-009/collection/testbed/src/collection/single_hcs_iodine_20261103_213324.zip",
+      "sha256": "02eb1feaa9296a28f85af512df835802293b5a89e650efdbf22f2ec6f8c962e7"
+    },
+    {
+      "trial": 10,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-010/collection/testbed/src/collection/single_hcs_iodine_20261103_215739.zip",
+      "sha256": "fa7777c8ed3919e63141a7027dca617725c825c9686cef2976bf808d681967a6"
+    },
+    {
+      "trial": 11,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-011/collection/testbed/src/collection/single_hcs_iodine_20261103_215931.zip",
+      "sha256": "cfe19301830cbddb01788eb3061dec9859eb78dba4cfbfe716fe0f331b629767"
+    },
+    {
+      "trial": 12,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-012/collection/testbed/src/collection/single_hcs_iodine_20261103_215324.zip",
+      "sha256": "d239592c013adf74c2d887b58093036d8392a499fd45001312da856bc6bc0577"
+    },
+    {
+      "trial": 13,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-013/collection/testbed/src/collection/single_hcs_iodine_20261103_221731.zip",
+      "sha256": "6fe5140d37dae2376fe490ee929feda961e6d1449c49ce73ceaa31bb22525bbf"
+    },
+    {
+      "trial": 14,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-014/collection/testbed/src/collection/single_hcs_iodine_20261103_221935.zip",
+      "sha256": "53f742eab0e01b4692af6fde76ec20cd25ff7f137313007ca9c667c5a0b7577f"
+    },
+    {
+      "trial": 15,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-015/collection/testbed/src/collection/single_hcs_iodine_20261103_221327.zip",
+      "sha256": "d48c786f95ed901b3cde227b9d05d60ab26680f5489075d9efdbf1bdf67527e8"
+    },
+    {
+      "trial": 16,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-016/collection/testbed/src/collection/single_hcs_iodine_20261103_223739.zip",
+      "sha256": "db8b64c25230d33fca3e868d2af34b2a5c7be74a4d1e98b413a1b1b330fb414e"
+    },
+    {
+      "trial": 17,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-017/collection/testbed/src/collection/single_hcs_iodine_20261103_223933.zip",
+      "sha256": "1edb43a4adf7306410da6bdb7e563bf9ecb72abac3dc650617246c040f8c999c"
+    },
+    {
+      "trial": 18,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-018/collection/testbed/src/collection/single_hcs_iodine_20261103_223327.zip",
+      "sha256": "eef4c8e565795a5577c789713a5cf9fb59275dfd500475714a5028174ab1b431"
+    },
+    {
+      "trial": 19,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-019/collection/testbed/src/collection/single_hcs_iodine_20261103_225739.zip",
+      "sha256": "9e856adabe094df5ddc8b4fd5aceb01cba613973c919d5ad31415bb4b83e8bae"
+    },
+    {
+      "trial": 20,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-020/collection/testbed/src/collection/single_hcs_iodine_20261103_225936.zip",
+      "sha256": "891f6234febf596891d4879eabb5d1dc12ec9a694a1733aa69c33bcd427b5bba"
+    },
+    {
+      "trial": 21,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-021/collection/testbed/src/collection/single_hcs_iodine_20261103_225329.zip",
+      "sha256": "ab03386287e1208ef5eef58cdd32389e37629bc5f338b57e003c67e59087d6cc"
+    },
+    {
+      "trial": 22,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-022/collection/testbed/src/collection/single_hcs_iodine_20261103_231837.zip",
+      "sha256": "33a39c3c223ed6ccddf27fc7e7df0f9245558e1a33ad1cf072ef3785083a2639"
+    },
+    {
+      "trial": 23,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-023/collection/testbed/src/collection/single_hcs_iodine_20261103_231931.zip",
+      "sha256": "b2f192eb0e060d4e03388b4310aea50a9482f5b8adade7a7f0726ab2308796f0"
+    },
+    {
+      "trial": 24,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSIodine/trial-024/collection/testbed/src/collection/single_hcs_iodine_20261103_231127.zip",
+      "sha256": "e913d89aaa10be7255e3d371f0db7b22bfc1c744a1f16ded07ca7124ac09cac7"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "source_run": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon",
+  "prepared_inputs": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/prepared-inputs/SingleHCSMastodon",
+  "testbed": "cp3",
+  "collected_trials": 24,
+  "analyzed_trials": 23,
+  "excluded_trials": [
+    {
+      "trial": 5,
+      "reason": "IRC conversation never started: alice_2 remained at Connecting; alice_1 waited for all clients to become ready. Neither log contains a Starting, Sent, or Received event."
+    }
+  ],
+  "python_version": "3.12.4",
+  "analysis_command": "/Users/dcirimel/.pyenv/versions/3.12.4/bin/python3 -m orchestrator analyze orchestrator-results/single-hcs-24-trials/SingleHCSMastodon",
+  "analysis_code_sha256": {
+    "maude-hcs-exp/orchestrator/dispatch_experiment.py": "c58a2223345b54f8f89437ee297c5465175ac0ba26542cef10cdcc1c2109957d",
+    "maude-hcs-exp/orchestrator/irc_server_log.py": "94773794ea74895936a91d4073aca924b2acd7398eab20a8ad9aa19481255348"
+  },
+  "asset_paths": {
+    "testbed/src/static/tc_profiles/single_hcs_mastodon_excellent.yaml": "user_models/static/tc_profiles/single_hcs_mastodon_excellent.yaml",
+    "testbed/src/static/tc_profiles/single_hcs_mastodon_good.yaml": "user_models/static/tc_profiles/single_hcs_mastodon_good.yaml",
+    "testbed/src/static/tc_profiles/single_hcs_mastodon_none.yaml": "user_models/static/tc_profiles/single_hcs_mastodon_none.yaml",
+    "testbed/src/static/irc_input/single_hcs_mastodon_irc_casualchat.json": "user_models/static/irc_input/single_hcs_mastodon_irc_casualchat.json",
+    "testbed/src/static/mastodon_actions/single_hcs_mastodon_mastodon_client_scenario_2.json": "user_models/static/mastodon_actions/single_hcs_mastodon_mastodon_client_scenario_2.json",
+    "testbed/src/static/mastodon_actions/single_hcs_mastodon_mastodon_server_scenario_2.json": "user_models/static/mastodon_actions/single_hcs_mastodon_mastodon_server_scenario_2.json"
+  },
+  "exported_files_sha256": {
+    "analysis.json": "8c006db6da95a8519a0bdabc872e29f25594be0b52964c3c212ad47420284df6",
+    "experiment.yaml": "5b26f6097574d92322174a617b23533565e148eea2787081379d25f4b86aed26",
+    "manifest.json": "88a67115e34f30bd31c2c2b6db7fc438ac40b6fcb3e3eee41b314db59a1af210",
+    "source.yaml": "c4560355b735d63737d51722694ba6dcaa211e28ac11c65d6989d5e6f2f60bc1",
+    "experiment.json": "de27e6ae7654ac7bb0789f5692498e90f85f0c2073bfdb9d63751a2f2d4ccc94",
+    "user_models/static/tc_profiles/single_hcs_mastodon_excellent.yaml": "a320f6c31da069825a6a1f48a400796e0d8a76270adf13f7fc0b81726881ec4a",
+    "user_models/static/tc_profiles/single_hcs_mastodon_good.yaml": "f25f838a6d0d2c38502cf760f14d89f9d99a0b2167a548c6e89c8324baae782e",
+    "user_models/static/tc_profiles/single_hcs_mastodon_none.yaml": "5fb2ccaaf7bc8ceeff27d23766bf5f6122424f624903acf04cdf4f930ccb0afb",
+    "user_models/static/irc_input/single_hcs_mastodon_irc_casualchat.json": "3ddf150ede9b9167666cdabd92a67d40078d03fd3eaa1512b0392e4ef71fc4f8",
+    "user_models/static/mastodon_actions/single_hcs_mastodon_mastodon_client_scenario_2.json": "409af77c970272c99c2968cd2bc0d429d2009603392e5bae1999a6f4995a8266",
+    "user_models/static/mastodon_actions/single_hcs_mastodon_mastodon_server_scenario_2.json": "188a5ca118d333fe26f6ed577920d3303d9a228fd53aa38332792c9c0d39198e"
+  },
+  "trial_archives": [
+    {
+      "trial": 1,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-001/collection/testbed/src/collection/single_hcs_mastodon_20261104_142231.zip",
+      "sha256": "80a9f9a9ea12c32d9c75f19d6d51ef86a320cc70888759ad8de3668dfa5d63e9"
+    },
+    {
+      "trial": 2,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-002/collection/testbed/src/collection/single_hcs_mastodon_20261104_142231.zip",
+      "sha256": "e5d37925a278bbfd4ff3e163fc2d5df530c8101146ab21a4a6d6eb1be04e669b"
+    },
+    {
+      "trial": 3,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-003/collection/testbed/src/collection/single_hcs_mastodon_20261104_142225.zip",
+      "sha256": "7549f578be058eda670cd982903b0db33d60cf09ced93f4f0016f467daa65fd7"
+    },
+    {
+      "trial": 4,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-004/collection/testbed/src/collection/single_hcs_mastodon_20261104_144523.zip",
+      "sha256": "36c3d128499b9f87a64992b11e5071c7f2de67f90ea1127c196d159b41cead4d"
+    },
+    {
+      "trial": 5,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-005/collection/testbed/src/collection/single_hcs_mastodon_20261104_143251.zip",
+      "sha256": "cd435a3fd8672b98792c08cf00274fcef661f888b333d5b65695b2ede4e164f4"
+    },
+    {
+      "trial": 6,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-006/collection/testbed/src/collection/single_hcs_mastodon_20261104_144331.zip",
+      "sha256": "5a46174cf5bfc47cba16e06d00472d063127079b1860ab70f88affee0ec3d09a"
+    },
+    {
+      "trial": 7,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-007/collection/testbed/src/collection/single_hcs_mastodon_20261104_150731.zip",
+      "sha256": "01356ba9b037e9e0c0ee232e0e03aacaa515c50f5218075a7469b2e71dc478ca"
+    },
+    {
+      "trial": 8,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-008/collection/testbed/src/collection/single_hcs_mastodon_20261104_145533.zip",
+      "sha256": "913cefe7862dd1a700dcc4f9d2b2aa7b6e35ab07c26867d5955f2fe5374e4ff7"
+    },
+    {
+      "trial": 9,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-009/collection/testbed/src/collection/single_hcs_mastodon_20261104_150531.zip",
+      "sha256": "d038c13897db331bea87fa47eb1bf4d13f9dc2a5fb2f698744b488b9bbd840e6"
+    },
+    {
+      "trial": 10,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-010/collection/testbed/src/collection/single_hcs_mastodon_20261104_153133.zip",
+      "sha256": "a11e2ca25fa289b56d9b813860e9204de96ba01cbf3170fff1fc67deba29f35a"
+    },
+    {
+      "trial": 11,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-011/collection/testbed/src/collection/single_hcs_mastodon_20261104_151835.zip",
+      "sha256": "470d60be52c64ad9d74b6bdf99ba21abb37ceee87060b71a8485f69ce10a758e"
+    },
+    {
+      "trial": 12,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-012/collection/testbed/src/collection/single_hcs_mastodon_20261104_152630.zip",
+      "sha256": "4faa06911f9debdfc895828cecba548290a97c6fb7721c33bb363e4417495fc3"
+    },
+    {
+      "trial": 13,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-013/collection/testbed/src/collection/single_hcs_mastodon_20261104_155430.zip",
+      "sha256": "34441efe9309845b2fdbc4ddfb7ef553f5f585756022d103b89f21b92cae6236"
+    },
+    {
+      "trial": 14,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-014/collection/testbed/src/collection/single_hcs_mastodon_20261104_154133.zip",
+      "sha256": "827129e1cc8d8ff07a0eefec95ab9df64d6296baddc6c9dc7b864b3204868e04"
+    },
+    {
+      "trial": 15,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-015/collection/testbed/src/collection/single_hcs_mastodon_20261104_154728.zip",
+      "sha256": "d5a19c6f738e5c7c7ddf595c3127172ac6d303e3b97031786c519fff6e765c6f"
+    },
+    {
+      "trial": 16,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-016/collection/testbed/src/collection/single_hcs_mastodon_20261104_161633.zip",
+      "sha256": "7d2889aeb69ccaa916f2391c8b08516d509d650afd23ffac99b0cf90d5dda935"
+    },
+    {
+      "trial": 17,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-017/collection/testbed/src/collection/single_hcs_mastodon_20261104_160535.zip",
+      "sha256": "65cbbb135d289b2f49e73e616854ab096e2429aa6a0bc925e8b3f1a3de984bc5"
+    },
+    {
+      "trial": 18,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-018/collection/testbed/src/collection/single_hcs_mastodon_20261104_160930.zip",
+      "sha256": "d83cd73c6a518f0ad7f64f4689c3ec2ad97fc4f91f1c9b7ca4917f7c0e4f4ef6"
+    },
+    {
+      "trial": 19,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-019/collection/testbed/src/collection/single_hcs_mastodon_20261104_163931.zip",
+      "sha256": "f8ecf78adcc06acd9f317123535f15cab57b1ec6f55c5ea317ad867d7c51e9d4"
+    },
+    {
+      "trial": 20,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-020/collection/testbed/src/collection/single_hcs_mastodon_20261104_162931.zip",
+      "sha256": "5108ccdbe5cabaa4d0003317fca5be1cf214741729535d675360744efc9a2a0b"
+    },
+    {
+      "trial": 21,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-021/collection/testbed/src/collection/single_hcs_mastodon_20261104_163027.zip",
+      "sha256": "ceb4170dbd03f00c9cd7132f0636fce656fe0efbecbbffecc41cf2d54d0ccc09"
+    },
+    {
+      "trial": 22,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-022/collection/testbed/src/collection/single_hcs_mastodon_20261104_170128.zip",
+      "sha256": "9cea1ddf509240c4aab357d6d31fbd1c4ad764609469a6edb61c3f69401051ad"
+    },
+    {
+      "trial": 23,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-023/collection/testbed/src/collection/single_hcs_mastodon_20261104_165138.zip",
+      "sha256": "f5962c66d46ff4c79048dce6ed58af2e5edf33bf151f35b949506b8112be8d66"
+    },
+    {
+      "trial": 24,
+      "path": "maude-hcs-exp/orchestrator-results/single-hcs-24-trials/SingleHCSMastodon/trial-024/collection/testbed/src/collection/single_hcs_mastodon_20261104_165130.zip",
+      "sha256": "2261247b8548a7127184a0e9772daf2c784f4c55addbd3f6af58ca4fb3c6a5c7"
+    }
+  ]
+}

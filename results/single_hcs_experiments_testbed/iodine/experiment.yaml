@@ -1,0 +1,66 @@
+env: single_hcs_iodine
+conversation_duration: 600
+max_start_delay: 120
+one_way_availability: 30
+analysis_window_size: 600
+network:
+  server_net:
+    network: server
+    params:
+      upstream:
+        latency: 10
+        loss_profile: single_hcs_iodine_excellent
+      downstream:
+        latency: 10
+        loss_profile: single_hcs_iodine_excellent
+  dns_net:
+    network: dns
+    params:
+      upstream:
+        latency: 20
+        loss_profile: single_hcs_iodine_good
+      downstream:
+        latency: 20
+        loss_profile: single_hcs_iodine_good
+  client_net_iodine:
+    nat: false
+    network: client
+    params:
+      upstream:
+        latency: 10
+        loss_profile: single_hcs_iodine_none
+      downstream:
+        latency: 10
+        loss_profile: single_hcs_iodine_none
+  minio_net:
+    network: minio
+    params:
+      upstream:
+        latency: 0
+        loss_profile: single_hcs_iodine_none
+      downstream:
+        latency: 0
+        loss_profile: single_hcs_iodine_none
+  mastodon_net:
+    network: mastodon
+    params:
+      upstream:
+        latency: 5
+        loss_profile: single_hcs_iodine_good
+      downstream:
+        latency: 5
+        loss_profile: single_hcs_iodine_good
+nodes:
+  node_type_iodine:
+    channel_config:
+    - direction: bidirectional
+      channel: iodine
+      vars:
+        client:
+          max_response_size: 202
+          max_query_length: 102
+    client_per_network:
+      client_net_iodine:
+        quantity: 2
+        profiles:
+          single_hcs_iodine_irc_casualchat: 1
