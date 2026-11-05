@@ -1,0 +1,48 @@
+env: single_tgen_dns
+conversation_duration: 600
+max_start_delay: 900
+one_way_availability: 30
+analysis_window_size: 600
+network:
+  server_net:
+    network: server
+    params:
+      upstream:
+        latency: 10
+        loss_profile: excellent
+      downstream:
+        latency: 10
+        loss_profile: excellent
+  dns_net:
+    network: dns
+    params:
+      upstream:
+        latency: 20
+        loss_profile: good
+      downstream:
+        latency: 20
+        loss_profile: good
+  client_net_iodine:
+    nat: false
+    network: client
+    params:
+      upstream:
+        latency: 10
+        loss_profile: none
+      downstream:
+        latency: 10
+        loss_profile: none
+nodes:
+  node_type_iodine:
+    channel_config:
+    - direction: bidirectional
+      channel: iodine
+      vars:
+        client:
+          max_response_size: 202
+          max_query_length: 102
+    client_per_network:
+      client_net_iodine:
+        quantity: 2
+        profiles:
+          irc_casualchat: 1

@@ -1,0 +1,8 @@
+
+sload ./test.maude
+sload /Users/lwest/Documents/pwnd2/maude-hcs/maude_hcs/lib/test-utils/test-utils.maude
+
+mod TEST-ENV is
+  inc TEST .
+  inc TEST-UTILS .
+endm

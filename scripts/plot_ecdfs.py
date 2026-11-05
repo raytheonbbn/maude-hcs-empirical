@@ -11,6 +11,8 @@ NAME_MAP = {
     "single_hcs_mastodon": "SingleHCSMastodonConfidentiality",
     "single_hcs_obfs": "SingleHCSObfsConfidentiality",
     "single_hcs_iodine": "SingleHCSIodineConfidentiality",
+    "single_hcs_skyhook": "SingleHCSSkyhookConfidentiality",
+    "single_hcs_webtunnel": "SingleHCSWebtunnelConfidentiality",
 }
 
 def plot_ecdfs(
@@ -72,7 +74,7 @@ if __name__ == "__main__":
 
     # Isolate stem of filename and remove hidden files
     map_name_and_strip_dot = lambda lst: list(filter(
-        lambda x: not x.startswith("."),
+        lambda x: not x.startswith(".") and not x in ["index.html", "README.md"],
         map(lambda x: x.name, lst)
     ))
 
