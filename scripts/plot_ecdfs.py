@@ -8,27 +8,9 @@ import json
 THIS_PATH = Path(__file__).resolve()
 
 NAME_MAP = {
-    "single_tgen_mastodon": "SingleTgenMastodonConfidentiality",
-    "single_tgen_dns": "SingleTgenDnsConfidentiality",
-    "single_tgen_ftp_obfs": "SingleTgenFtpObfsConfidentiality",
-    "single_tgen_ftp_webtunnel": "SingleTgenFtpWebtunnelConfidentiality",
-    "single_tgen_gorilla_obfs": "SingleTgenGorillaObfsConfidentiality",
-    "single_tgen_gorilla_webtunnel": "SingleTgenGorillaWebtunnelConfidentiality",
-    "single_tgen_irc_obfs": "SingleTgenIrcObfsConfidentiality",
-    "single_tgen_irc_webtunnel": "SingleTgenIrcWebtunnelConfidentiality",
-    "single_tgen_minio": "SingleTgenMinioConfidentiality"
-}
-
-VANTAGE_MAP = {
-    "SingleTgenMastodonConfidentiality": "cl[1]",
-    "SingleTgenDnsConfidentiality": "cl[3]",
-    "SingleTgenFtpObfsConfidentiality": "cl[2]",
-    "SingleTgenFtpWebtunnelConfidentiality": "cl[5]",
-    "SingleTgenGorillaObfsConfidentiality": "cl[2]",
-    "SingleTgenGorillaWebtunnelConfidentiality": "cl[5]",
-    "SingleTgenIrcObfsConfidentiality": "cl[2]",
-    "SingleTgenIrcWebtunnelConfidentiality": "cl[5]",
-    "SingleTgenMinioConfidentiality": "cl[4]"
+    "single_hcs_mastodon": "SingleHCSMastodonConfidentiality",
+    "single_hcs_obfs": "SingleHCSObfsConfidentiality",
+    "single_hcs_iodine": "SingleHCSIodineConfidentiality",
 }
 
 def plot_ecdfs(
@@ -83,9 +65,9 @@ def case_list_to_dict(cases: list[dict]) -> dict:
     return d
 
 if __name__ == "__main__":
-    smc_results_path = THIS_PATH.parent.parent / "results" / "single_tgen_experiments"
-    testbed_results_path = THIS_PATH.parent.parent / "results" / "single_tgen_confidentiality_experiments_testbed"
-    graph_dir = THIS_PATH.parent.parent / "results" / "single_tgen_graphs"
+    smc_results_path = THIS_PATH.parent.parent / "results" / "single_hcs_experiments_cp4"
+    testbed_results_path = THIS_PATH.parent.parent / "results" / "single_hcs_confidentiality_experiments_testbed"
+    graph_dir = THIS_PATH.parent.parent / "results" / "single_hcs_graphs_cp4"
     graph_dir.mkdir(exist_ok=True)
 
     # Isolate stem of filename and remove hidden files
@@ -96,6 +78,9 @@ if __name__ == "__main__":
 
     smc_exps = map_name_and_strip_dot(smc_results_path.iterdir())
     testbed_exps = map_name_and_strip_dot(testbed_results_path.iterdir())
+
+    print(smc_exps)
+    print(testbed_exps)
 
     assert set(map(lambda x: NAME_MAP[x], smc_exps)) == set(testbed_exps)
 
@@ -113,7 +98,7 @@ if __name__ == "__main__":
                 assert all(map(lambda x: x == 0, case["control_samples"]))
 
             # This isn't really for a two-pronged experiment, so remove test_samples
-            case["samples"] = case["control_samples"]
+            case["samples"] = case["test_samples"]
             del case["test_samples"]
             del case["control_samples"]
 
@@ -121,6 +106,9 @@ if __name__ == "__main__":
         for case in smc_cases_lst:
             if case["vantage"] in ["cl[2]", "cl[3]", "cl[4]", "cl[5]"]:
                 assert all(map(lambda x: x == 0, case["samples"]))
+        
+        for case in testbed_cases_lst:
+            assert case["vantage"] not in ["cl[2]", "cl[3]", "cl[4]", "cl[5]"]
 
         # Remove all client network vantage cases besides the one specified
         def filter_cl(cl, lst):
@@ -129,13 +117,13 @@ if __name__ == "__main__":
                 if (not case["vantage"].startswith("cl[")) or (case["vantage"] == cl)
             ]
 
-        testbed_cases_lst = filter_cl(VANTAGE_MAP[testbed_exp], testbed_cases_lst)
+        testbed_cases_lst = filter_cl("cl[1]", testbed_cases_lst)
         smc_cases_lst = filter_cl("cl[1]", smc_cases_lst)
 
-        # Rename the last remaining client net to "cl[1]" to match smc cases
-        for case in testbed_cases_lst:
-            if case["vantage"].startswith("cl["):
-                case["vantage"] = "cl[1]"
+        # # Rename the last remaining client net to "cl[1]" to match smc cases
+        # for case in testbed_cases_lst:
+        #     if case["vantage"].startswith("cl["):
+        #         case["vantage"] = "cl[1]"
 
         smc_cases = case_list_to_dict(smc_cases_lst)
         testbed_cases = case_list_to_dict(testbed_cases_lst)
