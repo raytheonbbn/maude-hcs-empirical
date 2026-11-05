@@ -1,17 +1,19 @@
 # Single-HCS confidentiality features from CP3 PCAPs
 
 These results extract the same 15 network features used by the confidentiality
-SMC/testbed analysis from the completed Iodine, Mastodon, and Obfs HCS-only
-runs in `maude-hcs-exp/orchestrator-results/single-hcs-24-trials`.
+SMC/testbed analysis from the completed Iodine, Mastodon, Obfs, Skyhook, and
+Webtunnel HCS-only runs in `maude-hcs-exp/orchestrator-results/single-hcs-24-trials`.
 
 | Experiment | Collected trials | Valid 600-second samples | Cases / plots |
 | --- | ---: | ---: | ---: |
 | SingleHCSIodineConfidentiality | 24 | 24 | 90 |
 | SingleHCSMastodonConfidentiality | 24 | 23 | 90 |
 | SingleHCSObfsConfidentiality | 24 | 24 | 90 |
+| SingleHCSSkyhookConfidentiality | 24 | 24 | 90 |
+| SingleHCSWebtunnelConfidentiality | 24 | 24 | 90 |
 
-Open [index.html](index.html) to browse the plots. Skyhook and Webtunnel are
-outside this export.
+Open [index.html](index.html) to browse all 450 plots. The complete suite
+contains 120 collected trials and 119 valid 600-second samples.
 
 ## Format and interpretation
 
@@ -47,7 +49,7 @@ All six available network vantages are included:
 | `minN` | `minio_net` |
 | `masN` | `mastodon_net` |
 | `dnsN` | `dns_net` |
-| `cl[1]` | The configuration's sole client network: `client_net_iodine`, `client_net_mastodon`, or `client_net_obfs` |
+| `cl[1]` | The configuration's sole client network: `client_net_iodine`, `client_net_mastodon`, `client_net_obfs`, `client_net_sky`, or `client_net_racetunnel` |
 
 Client indices are configuration-local. Use `vantage_networks` when comparing
 with earlier suites, where the same client network can have a different
@@ -65,7 +67,7 @@ BGP infrastructure traffic and avoids merging duplicate LAN/WAN observations.
 Mastodon trial 005 captured only **333.308 seconds**, shorter than the required
 600-second window. It is excluded without zero-padding or rescaling. Its IRC
 conversation also never started, as noted in the earlier performance analysis.
-The other 71 captures meet the full-window requirement. Archive hashes and
+The other 119 captures meet the full-window requirement. Archive hashes and
 the excluded-trial details are included in provenance; source manifests and
 PCAPs remain unchanged.
 
@@ -86,6 +88,8 @@ From `maude-hcs-exp`, with Python 3.12, the confidentiality requirements, and
 python3.12 orchestrator-results/single-hcs-24-trials/analyze_confidentiality.py iodine
 python3.12 orchestrator-results/single-hcs-24-trials/analyze_confidentiality.py mastodon
 python3.12 orchestrator-results/single-hcs-24-trials/analyze_confidentiality.py obfs
+python3.12 orchestrator-results/single-hcs-24-trials/analyze_confidentiality.py skyhook
+python3.12 orchestrator-results/single-hcs-24-trials/analyze_confidentiality.py webtunnel
 ```
 
 The batch script delegates feature extraction, JSON construction, and plotting
